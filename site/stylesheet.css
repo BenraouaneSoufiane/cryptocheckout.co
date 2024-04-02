@@ -1,0 +1,202 @@
+header {
+  position: fixed;
+    background-color: white;
+    width: 100%;
+    top: 0;
+    z-index: 99999;
+}
+#mainheading{
+  font-size: 3.75rem;
+  position: relative;
+  top: 70px;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    width: 53%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#logotext{
+    position: relative;
+    display: block;
+    float: left;
+}
+#menu{
+    margin-right: auto;
+    margin-left: auto;
+    position: fixed;
+    top: 0;
+    z-index: 99999;
+    background-color: white;
+    width: 100%;
+    opacity: 0.9;
+}
+#logo{
+    position: relative;
+    left: 50px;
+}
+#logo span {
+    content: '';
+    width: 50px;
+    height: 50px;
+    background-image: url('cryptocheckout.png');
+    background-repeat: no-repeat;
+    position: relative;
+    margin-right: 5px;
+    float: left
+}
+#menu p,#footer-container p{
+    font-weight: 600;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#menu a,#footer-container a{
+    color: cadetblue;
+    text-decoration: none;
+}
+.open-button {
+    width: 100px;
+    height: 100px;
+    transform: rotate(0deg);
+    transition: .5s ease-in-out;
+    position: absolute;
+    cursor: pointer;
+    border-bottom: 0;
+    top: 50px;
+    right: 100px;
+    z-index: 9999;
+    border-bottom: 0;
+    margin-top: 30px;
+  }
+   
+  
+  .open-button span {
+    display: block;
+    position: absolute;
+    height: 10px;
+    width: 100%;
+    background: black;
+    border-radius: 2px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+  }
+  
+  .open-button.open span {
+    background: black;
+  }
+  
+  .open-button span:nth-child(1) {
+    top: 0px;
+    transform-origin: left center;
+  }
+  
+  .open-button span:nth-child(2) {
+    top: 30px;
+    transform-origin: left center;
+  }
+  
+  .open-button span:nth-child(3) {
+    top: 60px;
+    transform-origin: left center;
+  }
+  
+  .open-button.open span:nth-child(1) {
+    transform: rotate(37deg);
+    top: -0px;
+    left: 8px;
+  }
+  
+  .open-button.open span:nth-child(2) {
+    width: 0%;
+    opacity: 0;
+  }
+  
+  .open-button.open span:nth-child(3) {
+    transform: rotate(-37deg);
+    top: 60px;
+    left: 8px;
+  }
+
+  .dot-flashing, .dot-flashing:before, .dot-flashing:after {
+    border-radius: 50%;
+    background-color: white;
+    width: 18px;
+    height: 18px;
+    transform-origin: center center;
+    display: inline-block;
+  }
+  .dot-flashing {
+    position: relative;
+    background-color: white;
+    opacity: 1;
+    -webkit-animation: spScaleAlpha 1s infinite linear;
+    animation: spScaleAlpha 1s infinite linear;
+  }
+  .dot-flashing:before, .dot-flashing:after {
+    content: '';
+    position: relative;
+    opacity: 0.25;
+  }
+  .dot-flashing:before {
+    left: 30px;
+    top: 0px;
+    -webkit-animation: spScaleAlphaBefore 1s infinite linear;
+    animation: spScaleAlphaBefore 1s infinite linear;
+  }
+  .dot-flashing:after {
+    left: -30px;
+    top: -23px;
+    -webkit-animation: spScaleAlphaAfter 1s infinite linear;
+    animation: spScaleAlphaAfter 1s infinite linear;
+  }
+  input:focus{
+    outline: 2px solid black;
+ }
+  @media screen and (max-width: 1000px) {
+    input,
+    input::placeholder{
+      
+       font-size: 58px
+    }
+    input:focus{
+      outline: 5px solid black;
+   }
+  }
+
+  @-webkit-keyframes spScaleAlpha {
+    0% { opacity: 1; }
+    33% { opacity: 0.25; }
+    66% { opacity: 0.25; }
+    100% { opacity: 1; }
+  }
+  @keyframes spScaleAlpha {
+    0% { opacity: 1; }
+    33% {  opacity: 0.25; }
+    66% { opacity: 0.25; }
+    100% {  opacity: 1; }
+  }
+  @-webkit-keyframes spScaleAlphaBefore {
+    0% { opacity: 0.25; }
+    33% { opacity: 1; }
+    66% { opacity: 0.25; }
+  }
+  @keyframes spScaleAlphaBefore {
+    0% { opacity: 0.25; }
+    33% { opacity: 1; }
+    66% { opacity: 0.25; }
+  }
+  @-webkit-keyframes spScaleAlphaAfter {
+    33% { opacity: 0.25; }
+    66% { opacity: 1; }
+    100% { opacity: 0.25; }
+  }
+  @keyframes spScaleAlphaAfter {
+    33% { opacity: 0.25; }
+    66% { opacity: 1; }
+    100% { opacity: 0.25; }
+  }
+  
+  
