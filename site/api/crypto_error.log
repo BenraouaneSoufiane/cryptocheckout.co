@@ -1,0 +1,571 @@
+node:internal/modules/cjs/loader:936
+  throw err;
+  ^
+
+Error: Cannot find module '@trustwallet/wallet-core'
+Require stack:
+- C:\Apache24\htdocs\getpaidcrypto.online\api\app.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Server.<anonymous> (C:\Apache24\htdocs\getpaidcrypto.online\api\app.js:116:24)
+    at Server.emit (node:events:527:28)
+    at parserOnIncoming (node:_http_server:956:12)
+    at HTTPParser.parserOnHeadersComplete (node:_http_common:128:17) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ 'C:\\Apache24\\htdocs\\getpaidcrypto.online\\api\\app.js' ]
+}
+
+C:\Apache24\htdocs\getpaidcrypto.online\api\node_modules\@trustwallet\wallet-core\dist\lib\wallet-core.js:14
+return a};ja=(a,b,c)=>{a=ma(a)?new URL(a):la.normalize(a);fs.readFile(a,function(d,e){d?c(d):b(e.buffer)})};1<process.argv.length&&(da=process.argv[1].replace(/\\/g,"/"));process.argv.slice(2);process.on("uncaughtException",function(a){throw a;});process.on("unhandledRejection",function(a){throw a;});g.inspect=function(){return"[Emscripten Module object]"}}else if(ha){if("object"==typeof process&&"function"===typeof require||"object"==typeof window||"function"==typeof importScripts)throw Error("not compiled for this environment (did you build to HTML and try to run it not on the web, or set ENVIRONMENT to something - like node - and run it someplace else - like on the web?)");
+                                                                                                                                                                                                                                            ^
+Error [BindingError]: Cannot pass non-string to std::string
+    at Object.<anonymous> (C:\Apache24\htdocs\getpaidcrypto.online\api\node_modules\@trustwallet\wallet-core\dist\lib\wallet-core.js:73:76)
+    at new <anonymous> (C:\Apache24\htdocs\getpaidcrypto.online\api\node_modules\@trustwallet\wallet-core\dist\lib\wallet-core.js:72:261)
+    at Q (C:\Apache24\htdocs\getpaidcrypto.online\api\node_modules\@trustwallet\wallet-core\dist\lib\wallet-core.js:73:382)
+    at Object.toWireType (C:\Apache24\htdocs\getpaidcrypto.online\api\node_modules\@trustwallet\wallet-core\dist\lib\wallet-core.js:135:428)
+    at Function.create (C:\Apache24\htdocs\getpaidcrypto.online\api\node_modules\@trustwallet\wallet-core\dist\lib\wallet-core.js:91:8)
+    at C:\Apache24\htdocs\getpaidcrypto.online\api\app.js:120:38
+
+C:\Apache24\htdocs\getpaidcrypto.online\api\node_modules\@trustwallet\wallet-core\dist\lib\wallet-core.js:14
+return a};ja=(a,b,c)=>{a=ma(a)?new URL(a):la.normalize(a);fs.readFile(a,function(d,e){d?c(d):b(e.buffer)})};1<process.argv.length&&(da=process.argv[1].replace(/\\/g,"/"));process.argv.slice(2);process.on("uncaughtException",function(a){throw a;});process.on("unhandledRejection",function(a){throw a;});g.inspect=function(){return"[Emscripten Module object]"}}else if(ha){if("object"==typeof process&&"function"===typeof require||"object"==typeof window||"function"==typeof importScripts)throw Error("not compiled for this environment (did you build to HTML and try to run it not on the web, or set ENVIRONMENT to something - like node - and run it someplace else - like on the web?)");
+                                                                                                                                                                                                                                            ^
+Error [BindingError]: Cannot pass non-string to std::string
+    at Object.<anonymous> (C:\Apache24\htdocs\getpaidcrypto.online\api\node_modules\@trustwallet\wallet-core\dist\lib\wallet-core.js:73:76)
+    at new <anonymous> (C:\Apache24\htdocs\getpaidcrypto.online\api\node_modules\@trustwallet\wallet-core\dist\lib\wallet-core.js:72:261)
+    at Q (C:\Apache24\htdocs\getpaidcrypto.online\api\node_modules\@trustwallet\wallet-core\dist\lib\wallet-core.js:73:382)
+    at Object.toWireType (C:\Apache24\htdocs\getpaidcrypto.online\api\node_modules\@trustwallet\wallet-core\dist\lib\wallet-core.js:135:428)
+    at Function.create (C:\Apache24\htdocs\getpaidcrypto.online\api\node_modules\@trustwallet\wallet-core\dist\lib\wallet-core.js:91:8)
+    at C:\Apache24\htdocs\getpaidcrypto.online\api\app.js:120:38
+
+C:\Apache24\htdocs\getpaidcrypto.online\api\node_modules\@trustwallet\wallet-core\dist\lib\wallet-core.js:14
+return a};ja=(a,b,c)=>{a=ma(a)?new URL(a):la.normalize(a);fs.readFile(a,function(d,e){d?c(d):b(e.buffer)})};1<process.argv.length&&(da=process.argv[1].replace(/\\/g,"/"));process.argv.slice(2);process.on("uncaughtException",function(a){throw a;});process.on("unhandledRejection",function(a){throw a;});g.inspect=function(){return"[Emscripten Module object]"}}else if(ha){if("object"==typeof process&&"function"===typeof require||"object"==typeof window||"function"==typeof importScripts)throw Error("not compiled for this environment (did you build to HTML and try to run it not on the web, or set ENVIRONMENT to something - like node - and run it someplace else - like on the web?)");
+                                                                                                                                                                                                                                            ^
+Error [BindingError]: Cannot pass non-string to std::string
+    at Object.<anonymous> (C:\Apache24\htdocs\getpaidcrypto.online\api\node_modules\@trustwallet\wallet-core\dist\lib\wallet-core.js:73:76)
+    at new <anonymous> (C:\Apache24\htdocs\getpaidcrypto.online\api\node_modules\@trustwallet\wallet-core\dist\lib\wallet-core.js:72:261)
+    at Q (C:\Apache24\htdocs\getpaidcrypto.online\api\node_modules\@trustwallet\wallet-core\dist\lib\wallet-core.js:73:382)
+    at Object.toWireType (C:\Apache24\htdocs\getpaidcrypto.online\api\node_modules\@trustwallet\wallet-core\dist\lib\wallet-core.js:135:428)
+    at Function.create (C:\Apache24\htdocs\getpaidcrypto.online\api\node_modules\@trustwallet\wallet-core\dist\lib\wallet-core.js:91:8)
+    at C:\Apache24\htdocs\getpaidcrypto.online\api\app.js:120:38
+
+C:\Apache24\htdocs\getpaidcrypto.online\api\node_modules\@trustwallet\wallet-core\dist\lib\wallet-core.js:14
+return a};ja=(a,b,c)=>{a=ma(a)?new URL(a):la.normalize(a);fs.readFile(a,function(d,e){d?c(d):b(e.buffer)})};1<process.argv.length&&(da=process.argv[1].replace(/\\/g,"/"));process.argv.slice(2);process.on("uncaughtException",function(a){throw a;});process.on("unhandledRejection",function(a){throw a;});g.inspect=function(){return"[Emscripten Module object]"}}else if(ha){if("object"==typeof process&&"function"===typeof require||"object"==typeof window||"function"==typeof importScripts)throw Error("not compiled for this environment (did you build to HTML and try to run it not on the web, or set ENVIRONMENT to something - like node - and run it someplace else - like on the web?)");
+                                                                                                                                                                                                                                            ^
+Error [BindingError]: Cannot pass non-string to std::string
+    at Object.<anonymous> (C:\Apache24\htdocs\getpaidcrypto.online\api\node_modules\@trustwallet\wallet-core\dist\lib\wallet-core.js:73:76)
+    at new <anonymous> (C:\Apache24\htdocs\getpaidcrypto.online\api\node_modules\@trustwallet\wallet-core\dist\lib\wallet-core.js:72:261)
+    at Q (C:\Apache24\htdocs\getpaidcrypto.online\api\node_modules\@trustwallet\wallet-core\dist\lib\wallet-core.js:73:382)
+    at Object.toWireType (C:\Apache24\htdocs\getpaidcrypto.online\api\node_modules\@trustwallet\wallet-core\dist\lib\wallet-core.js:135:428)
+    at Function.create (C:\Apache24\htdocs\getpaidcrypto.online\api\node_modules\@trustwallet\wallet-core\dist\lib\wallet-core.js:91:8)
+    at C:\Apache24\htdocs\getpaidcrypto.online\api\app.js:120:38
+
+C:\Apache24\htdocs\getpaidcrypto.online\api\node_modules\@trustwallet\wallet-core\dist\lib\wallet-core.js:14
+return a};ja=(a,b,c)=>{a=ma(a)?new URL(a):la.normalize(a);fs.readFile(a,function(d,e){d?c(d):b(e.buffer)})};1<process.argv.length&&(da=process.argv[1].replace(/\\/g,"/"));process.argv.slice(2);process.on("uncaughtException",function(a){throw a;});process.on("unhandledRejection",function(a){throw a;});g.inspect=function(){return"[Emscripten Module object]"}}else if(ha){if("object"==typeof process&&"function"===typeof require||"object"==typeof window||"function"==typeof importScripts)throw Error("not compiled for this environment (did you build to HTML and try to run it not on the web, or set ENVIRONMENT to something - like node - and run it someplace else - like on the web?)");
+                                                                                                                                                                                                                                            ^
+Error [BindingError]: Cannot pass non-string to std::string
+    at Object.<anonymous> (C:\Apache24\htdocs\getpaidcrypto.online\api\node_modules\@trustwallet\wallet-core\dist\lib\wallet-core.js:73:76)
+    at new <anonymous> (C:\Apache24\htdocs\getpaidcrypto.online\api\node_modules\@trustwallet\wallet-core\dist\lib\wallet-core.js:72:261)
+    at Q (C:\Apache24\htdocs\getpaidcrypto.online\api\node_modules\@trustwallet\wallet-core\dist\lib\wallet-core.js:73:382)
+    at Object.toWireType (C:\Apache24\htdocs\getpaidcrypto.online\api\node_modules\@trustwallet\wallet-core\dist\lib\wallet-core.js:135:428)
+    at Function.create (C:\Apache24\htdocs\getpaidcrypto.online\api\node_modules\@trustwallet\wallet-core\dist\lib\wallet-core.js:91:8)
+    at C:\Apache24\htdocs\getpaidcrypto.online\api\app.js:120:38
+
+C:\Apache24\htdocs\getpaidcrypto.online\api\node_modules\@trustwallet\wallet-core\dist\lib\wallet-core.js:14
+return a};ja=(a,b,c)=>{a=ma(a)?new URL(a):la.normalize(a);fs.readFile(a,function(d,e){d?c(d):b(e.buffer)})};1<process.argv.length&&(da=process.argv[1].replace(/\\/g,"/"));process.argv.slice(2);process.on("uncaughtException",function(a){throw a;});process.on("unhandledRejection",function(a){throw a;});g.inspect=function(){return"[Emscripten Module object]"}}else if(ha){if("object"==typeof process&&"function"===typeof require||"object"==typeof window||"function"==typeof importScripts)throw Error("not compiled for this environment (did you build to HTML and try to run it not on the web, or set ENVIRONMENT to something - like node - and run it someplace else - like on the web?)");
+                                                                                                                                                                                                                                            ^
+Error [BindingError]: Cannot pass non-string to std::string
+    at Object.<anonymous> (C:\Apache24\htdocs\getpaidcrypto.online\api\node_modules\@trustwallet\wallet-core\dist\lib\wallet-core.js:73:76)
+    at new <anonymous> (C:\Apache24\htdocs\getpaidcrypto.online\api\node_modules\@trustwallet\wallet-core\dist\lib\wallet-core.js:72:261)
+    at Q (C:\Apache24\htdocs\getpaidcrypto.online\api\node_modules\@trustwallet\wallet-core\dist\lib\wallet-core.js:73:382)
+    at Object.toWireType (C:\Apache24\htdocs\getpaidcrypto.online\api\node_modules\@trustwallet\wallet-core\dist\lib\wallet-core.js:135:428)
+    at Function.create (C:\Apache24\htdocs\getpaidcrypto.online\api\node_modules\@trustwallet\wallet-core\dist\lib\wallet-core.js:91:8)
+    at C:\Apache24\htdocs\getpaidcrypto.online\api\app.js:120:38
+
+C:\Apache24\htdocs\getpaidcrypto.online\api\node_modules\@trustwallet\wallet-core\dist\lib\wallet-core.js:14
+return a};ja=(a,b,c)=>{a=ma(a)?new URL(a):la.normalize(a);fs.readFile(a,function(d,e){d?c(d):b(e.buffer)})};1<process.argv.length&&(da=process.argv[1].replace(/\\/g,"/"));process.argv.slice(2);process.on("uncaughtException",function(a){throw a;});process.on("unhandledRejection",function(a){throw a;});g.inspect=function(){return"[Emscripten Module object]"}}else if(ha){if("object"==typeof process&&"function"===typeof require||"object"==typeof window||"function"==typeof importScripts)throw Error("not compiled for this environment (did you build to HTML and try to run it not on the web, or set ENVIRONMENT to something - like node - and run it someplace else - like on the web?)");
+                                                                                                                                                                                                                                            ^
+Error [BindingError]: Cannot pass non-string to std::string
+    at Object.<anonymous> (C:\Apache24\htdocs\getpaidcrypto.online\api\node_modules\@trustwallet\wallet-core\dist\lib\wallet-core.js:73:76)
+    at new <anonymous> (C:\Apache24\htdocs\getpaidcrypto.online\api\node_modules\@trustwallet\wallet-core\dist\lib\wallet-core.js:72:261)
+    at Q (C:\Apache24\htdocs\getpaidcrypto.online\api\node_modules\@trustwallet\wallet-core\dist\lib\wallet-core.js:73:382)
+    at Object.toWireType (C:\Apache24\htdocs\getpaidcrypto.online\api\node_modules\@trustwallet\wallet-core\dist\lib\wallet-core.js:135:428)
+    at Function.create (C:\Apache24\htdocs\getpaidcrypto.online\api\node_modules\@trustwallet\wallet-core\dist\lib\wallet-core.js:91:8)
+    at C:\Apache24\htdocs\getpaidcrypto.online\api\app.js:120:38
+
+C:\Apache24\htdocs\getpaidcrypto.online\api\node_modules\@trustwallet\wallet-core\dist\lib\wallet-core.js:14
+return a};ja=(a,b,c)=>{a=ma(a)?new URL(a):la.normalize(a);fs.readFile(a,function(d,e){d?c(d):b(e.buffer)})};1<process.argv.length&&(da=process.argv[1].replace(/\\/g,"/"));process.argv.slice(2);process.on("uncaughtException",function(a){throw a;});process.on("unhandledRejection",function(a){throw a;});g.inspect=function(){return"[Emscripten Module object]"}}else if(ha){if("object"==typeof process&&"function"===typeof require||"object"==typeof window||"function"==typeof importScripts)throw Error("not compiled for this environment (did you build to HTML and try to run it not on the web, or set ENVIRONMENT to something - like node - and run it someplace else - like on the web?)");
+                                                                                                                                                                                                                                            ^
+Error [BindingError]: Cannot pass non-string to std::string
+    at Object.<anonymous> (C:\Apache24\htdocs\getpaidcrypto.online\api\node_modules\@trustwallet\wallet-core\dist\lib\wallet-core.js:73:76)
+    at new <anonymous> (C:\Apache24\htdocs\getpaidcrypto.online\api\node_modules\@trustwallet\wallet-core\dist\lib\wallet-core.js:72:261)
+    at Q (C:\Apache24\htdocs\getpaidcrypto.online\api\node_modules\@trustwallet\wallet-core\dist\lib\wallet-core.js:73:382)
+    at Object.toWireType (C:\Apache24\htdocs\getpaidcrypto.online\api\node_modules\@trustwallet\wallet-core\dist\lib\wallet-core.js:135:428)
+    at Function.create (C:\Apache24\htdocs\getpaidcrypto.online\api\node_modules\@trustwallet\wallet-core\dist\lib\wallet-core.js:91:8)
+    at C:\Apache24\htdocs\getpaidcrypto.online\api\app.js:120:38
+
+C:\Apache24\htdocs\getpaidcrypto.online\api\node_modules\@trustwallet\wallet-core\dist\lib\wallet-core.js:14
+return a};ja=(a,b,c)=>{a=ma(a)?new URL(a):la.normalize(a);fs.readFile(a,function(d,e){d?c(d):b(e.buffer)})};1<process.argv.length&&(da=process.argv[1].replace(/\\/g,"/"));process.argv.slice(2);process.on("uncaughtException",function(a){throw a;});process.on("unhandledRejection",function(a){throw a;});g.inspect=function(){return"[Emscripten Module object]"}}else if(ha){if("object"==typeof process&&"function"===typeof require||"object"==typeof window||"function"==typeof importScripts)throw Error("not compiled for this environment (did you build to HTML and try to run it not on the web, or set ENVIRONMENT to something - like node - and run it someplace else - like on the web?)");
+                                                                                                                                                                                                                                            ^
+Error [BindingError]: Cannot pass non-string to std::string
+    at Object.<anonymous> (C:\Apache24\htdocs\getpaidcrypto.online\api\node_modules\@trustwallet\wallet-core\dist\lib\wallet-core.js:73:76)
+    at new <anonymous> (C:\Apache24\htdocs\getpaidcrypto.online\api\node_modules\@trustwallet\wallet-core\dist\lib\wallet-core.js:72:261)
+    at Q (C:\Apache24\htdocs\getpaidcrypto.online\api\node_modules\@trustwallet\wallet-core\dist\lib\wallet-core.js:73:382)
+    at Object.toWireType (C:\Apache24\htdocs\getpaidcrypto.online\api\node_modules\@trustwallet\wallet-core\dist\lib\wallet-core.js:135:428)
+    at Function.create (C:\Apache24\htdocs\getpaidcrypto.online\api\node_modules\@trustwallet\wallet-core\dist\lib\wallet-core.js:91:8)
+    at C:\Apache24\htdocs\getpaidcrypto.online\api\app.js:120:38
+
+C:\Apache24\htdocs\getpaidcrypto.online\api\node_modules\@trustwallet\wallet-core\dist\lib\wallet-core.js:14
+return a};ja=(a,b,c)=>{a=ma(a)?new URL(a):la.normalize(a);fs.readFile(a,function(d,e){d?c(d):b(e.buffer)})};1<process.argv.length&&(da=process.argv[1].replace(/\\/g,"/"));process.argv.slice(2);process.on("uncaughtException",function(a){throw a;});process.on("unhandledRejection",function(a){throw a;});g.inspect=function(){return"[Emscripten Module object]"}}else if(ha){if("object"==typeof process&&"function"===typeof require||"object"==typeof window||"function"==typeof importScripts)throw Error("not compiled for this environment (did you build to HTML and try to run it not on the web, or set ENVIRONMENT to something - like node - and run it someplace else - like on the web?)");
+                                                                                                                                                                                                                                            ^
+Error [BindingError]: Cannot pass non-string to std::string
+    at Object.<anonymous> (C:\Apache24\htdocs\getpaidcrypto.online\api\node_modules\@trustwallet\wallet-core\dist\lib\wallet-core.js:73:76)
+    at new <anonymous> (C:\Apache24\htdocs\getpaidcrypto.online\api\node_modules\@trustwallet\wallet-core\dist\lib\wallet-core.js:72:261)
+    at Q (C:\Apache24\htdocs\getpaidcrypto.online\api\node_modules\@trustwallet\wallet-core\dist\lib\wallet-core.js:73:382)
+    at Object.toWireType (C:\Apache24\htdocs\getpaidcrypto.online\api\node_modules\@trustwallet\wallet-core\dist\lib\wallet-core.js:135:428)
+    at Function.create (C:\Apache24\htdocs\getpaidcrypto.online\api\node_modules\@trustwallet\wallet-core\dist\lib\wallet-core.js:91:8)
+    at C:\Apache24\htdocs\getpaidcrypto.online\api\app.js:120:38
+
+C:\Apache24\htdocs\getpaidcrypto.online\api\node_modules\@trustwallet\wallet-core\dist\lib\wallet-core.js:14
+return a};ja=(a,b,c)=>{a=ma(a)?new URL(a):la.normalize(a);fs.readFile(a,function(d,e){d?c(d):b(e.buffer)})};1<process.argv.length&&(da=process.argv[1].replace(/\\/g,"/"));process.argv.slice(2);process.on("uncaughtException",function(a){throw a;});process.on("unhandledRejection",function(a){throw a;});g.inspect=function(){return"[Emscripten Module object]"}}else if(ha){if("object"==typeof process&&"function"===typeof require||"object"==typeof window||"function"==typeof importScripts)throw Error("not compiled for this environment (did you build to HTML and try to run it not on the web, or set ENVIRONMENT to something - like node - and run it someplace else - like on the web?)");
+                                                                                                                                                                                                                                            ^
+Error [BindingError]: Cannot pass non-string to std::string
+    at Object.<anonymous> (C:\Apache24\htdocs\getpaidcrypto.online\api\node_modules\@trustwallet\wallet-core\dist\lib\wallet-core.js:73:76)
+    at new <anonymous> (C:\Apache24\htdocs\getpaidcrypto.online\api\node_modules\@trustwallet\wallet-core\dist\lib\wallet-core.js:72:261)
+    at Q (C:\Apache24\htdocs\getpaidcrypto.online\api\node_modules\@trustwallet\wallet-core\dist\lib\wallet-core.js:73:382)
+    at Object.toWireType (C:\Apache24\htdocs\getpaidcrypto.online\api\node_modules\@trustwallet\wallet-core\dist\lib\wallet-core.js:135:428)
+    at Function.create (C:\Apache24\htdocs\getpaidcrypto.online\api\node_modules\@trustwallet\wallet-core\dist\lib\wallet-core.js:91:8)
+    at C:\Apache24\htdocs\getpaidcrypto.online\api\app.js:120:38
+
+C:\Apache24\htdocs\getpaidcrypto.online\api\node_modules\@trustwallet\wallet-core\dist\lib\wallet-core.js:14
+return a};ja=(a,b,c)=>{a=ma(a)?new URL(a):la.normalize(a);fs.readFile(a,function(d,e){d?c(d):b(e.buffer)})};1<process.argv.length&&(da=process.argv[1].replace(/\\/g,"/"));process.argv.slice(2);process.on("uncaughtException",function(a){throw a;});process.on("unhandledRejection",function(a){throw a;});g.inspect=function(){return"[Emscripten Module object]"}}else if(ha){if("object"==typeof process&&"function"===typeof require||"object"==typeof window||"function"==typeof importScripts)throw Error("not compiled for this environment (did you build to HTML and try to run it not on the web, or set ENVIRONMENT to something - like node - and run it someplace else - like on the web?)");
+                                                                                                                                                                                                                                            ^
+Error [BindingError]: Cannot pass non-string to std::string
+    at Object.<anonymous> (C:\Apache24\htdocs\getpaidcrypto.online\api\node_modules\@trustwallet\wallet-core\dist\lib\wallet-core.js:73:76)
+    at new <anonymous> (C:\Apache24\htdocs\getpaidcrypto.online\api\node_modules\@trustwallet\wallet-core\dist\lib\wallet-core.js:72:261)
+    at Q (C:\Apache24\htdocs\getpaidcrypto.online\api\node_modules\@trustwallet\wallet-core\dist\lib\wallet-core.js:73:382)
+    at Object.toWireType (C:\Apache24\htdocs\getpaidcrypto.online\api\node_modules\@trustwallet\wallet-core\dist\lib\wallet-core.js:135:428)
+    at Function.create (C:\Apache24\htdocs\getpaidcrypto.online\api\node_modules\@trustwallet\wallet-core\dist\lib\wallet-core.js:91:8)
+    at C:\Apache24\htdocs\getpaidcrypto.online\api\app.js:120:38
+
+C:\Apache24\htdocs\getpaidcrypto.online\api\node_modules\@trustwallet\wallet-core\dist\lib\wallet-core.js:14
+return a};ja=(a,b,c)=>{a=ma(a)?new URL(a):la.normalize(a);fs.readFile(a,function(d,e){d?c(d):b(e.buffer)})};1<process.argv.length&&(da=process.argv[1].replace(/\\/g,"/"));process.argv.slice(2);process.on("uncaughtException",function(a){throw a;});process.on("unhandledRejection",function(a){throw a;});g.inspect=function(){return"[Emscripten Module object]"}}else if(ha){if("object"==typeof process&&"function"===typeof require||"object"==typeof window||"function"==typeof importScripts)throw Error("not compiled for this environment (did you build to HTML and try to run it not on the web, or set ENVIRONMENT to something - like node - and run it someplace else - like on the web?)");
+                                                                                                                                                                                                                                            ^
+Error [BindingError]: Cannot pass non-string to std::string
+    at Object.<anonymous> (C:\Apache24\htdocs\getpaidcrypto.online\api\node_modules\@trustwallet\wallet-core\dist\lib\wallet-core.js:73:76)
+    at new <anonymous> (C:\Apache24\htdocs\getpaidcrypto.online\api\node_modules\@trustwallet\wallet-core\dist\lib\wallet-core.js:72:261)
+    at Q (C:\Apache24\htdocs\getpaidcrypto.online\api\node_modules\@trustwallet\wallet-core\dist\lib\wallet-core.js:73:382)
+    at Object.toWireType (C:\Apache24\htdocs\getpaidcrypto.online\api\node_modules\@trustwallet\wallet-core\dist\lib\wallet-core.js:135:428)
+    at Function.create (C:\Apache24\htdocs\getpaidcrypto.online\api\node_modules\@trustwallet\wallet-core\dist\lib\wallet-core.js:91:8)
+    at C:\Apache24\htdocs\getpaidcrypto.online\api\app.js:120:38
+C:\Apache24\htdocs\getpaidcrypto.online\api\node_modules\@trustwallet\wallet-core\dist\lib\wallet-core.js:14
+return a};ja=(a,b,c)=>{a=ma(a)?new URL(a):la.normalize(a);fs.readFile(a,function(d,e){d?c(d):b(e.buffer)})};1<process.argv.length&&(da=process.argv[1].replace(/\\/g,"/"));process.argv.slice(2);process.on("uncaughtException",function(a){throw a;});process.on("unhandledRejection",function(a){throw a;});g.inspect=function(){return"[Emscripten Module object]"}}else if(ha){if("object"==typeof process&&"function"===typeof require||"object"==typeof window||"function"==typeof importScripts)throw Error("not compiled for this environment (did you build to HTML and try to run it not on the web, or set ENVIRONMENT to something - like node - and run it someplace else - like on the web?)");
+                                                                                                                                                                                                                                            ^
+
+MoneroRpcError: RequestError: Error: connect ETIMEDOUT 162.210.173.15:18089
+    at MoneroRpcConnection.sendJsonRequest (C:\Apache24\htdocs\getpaidcrypto.online\api\node_modules\@rino-wallet\monero-javascript\src\main\js\common\MoneroRpcConnection.js:263:18)
+    at async MoneroDaemonRpc.getHeight (C:\Apache24\htdocs\getpaidcrypto.online\api\node_modules\@rino-wallet\monero-javascript\src\main\js\daemon\MoneroDaemonRpc.js:257:16)
+    at async C:\Apache24\htdocs\getpaidcrypto.online\api\app.js:62:26 {
+  code: undefined,
+  rpcMethod: 'get_block_count',
+  rpcParams: undefined
+}
+node:internal/modules/cjs/loader:936
+  throw err;
+  ^
+
+Error: Cannot find module '@trustwallet/wallet-core'
+Require stack:
+- C:\Apache24\htdocs\getpaidcrypto.online\api\app.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Server.<anonymous> (C:\Apache24\htdocs\getpaidcrypto.online\api\app.js:116:24)
+    at Server.emit (node:events:527:28)
+    at parserOnIncoming (node:_http_server:956:12)
+    at HTTPParser.parserOnHeadersComplete (node:_http_common:128:17) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ 'C:\\Apache24\\htdocs\\getpaidcrypto.online\\api\\app.js' ]
+}
+node:internal/modules/cjs/loader:936
+  throw err;
+  ^
+
+Error: Cannot find module '@trustwallet/wallet-core'
+Require stack:
+- C:\Apache24\htdocs\getpaidcrypto.online\api\app.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Server.<anonymous> (C:\Apache24\htdocs\getpaidcrypto.online\api\app.js:116:24)
+    at Server.emit (node:events:527:28)
+    at parserOnIncoming (node:_http_server:956:12)
+    at HTTPParser.parserOnHeadersComplete (node:_http_common:128:17) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ 'C:\\Apache24\\htdocs\\getpaidcrypto.online\\api\\app.js' ]
+}
+node:internal/modules/cjs/loader:936
+  throw err;
+  ^
+
+Error: Cannot find module '@trustwallet/wallet-core'
+Require stack:
+- C:\Apache24\htdocs\getpaidcrypto.online\api\app.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Server.<anonymous> (C:\Apache24\htdocs\getpaidcrypto.online\api\app.js:116:24)
+    at Server.emit (node:events:527:28)
+    at parserOnIncoming (node:_http_server:956:12)
+    at HTTPParser.parserOnHeadersComplete (node:_http_common:128:17) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ 'C:\\Apache24\\htdocs\\getpaidcrypto.online\\api\\app.js' ]
+}
+node:internal/modules/cjs/loader:936
+  throw err;
+  ^
+
+Error: Cannot find module '@trustwallet/wallet-core'
+Require stack:
+- C:\Apache24\htdocs\getpaidcrypto.online\api\app.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Server.<anonymous> (C:\Apache24\htdocs\getpaidcrypto.online\api\app.js:116:24)
+    at Server.emit (node:events:527:28)
+    at parserOnIncoming (node:_http_server:956:12)
+    at HTTPParser.parserOnHeadersComplete (node:_http_common:128:17) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ 'C:\\Apache24\\htdocs\\getpaidcrypto.online\\api\\app.js' ]
+}
+node:internal/modules/cjs/loader:936
+  throw err;
+  ^
+
+Error: Cannot find module '@trustwallet/wallet-core'
+Require stack:
+- C:\Apache24\htdocs\getpaidcrypto.online\api\app.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Server.<anonymous> (C:\Apache24\htdocs\getpaidcrypto.online\api\app.js:116:24)
+    at Server.emit (node:events:527:28)
+    at parserOnIncoming (node:_http_server:956:12)
+    at HTTPParser.parserOnHeadersComplete (node:_http_common:128:17) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ 'C:\\Apache24\\htdocs\\getpaidcrypto.online\\api\\app.js' ]
+}
+node:internal/modules/cjs/loader:936
+  throw err;
+  ^
+
+Error: Cannot find module '@trustwallet/wallet-core'
+Require stack:
+- C:\Apache24\htdocs\getpaidcrypto.online\api\app.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Server.<anonymous> (C:\Apache24\htdocs\getpaidcrypto.online\api\app.js:116:24)
+    at Server.emit (node:events:527:28)
+    at parserOnIncoming (node:_http_server:956:12)
+    at HTTPParser.parserOnHeadersComplete (node:_http_common:128:17) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ 'C:\\Apache24\\htdocs\\getpaidcrypto.online\\api\\app.js' ]
+}
+node:internal/modules/cjs/loader:936
+  throw err;
+  ^
+
+Error: Cannot find module '@trustwallet/wallet-core'
+Require stack:
+- C:\Apache24\htdocs\getpaidcrypto.online\api\app.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Server.<anonymous> (C:\Apache24\htdocs\getpaidcrypto.online\api\app.js:116:24)
+    at Server.emit (node:events:527:28)
+    at parserOnIncoming (node:_http_server:956:12)
+    at HTTPParser.parserOnHeadersComplete (node:_http_common:128:17) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ 'C:\\Apache24\\htdocs\\getpaidcrypto.online\\api\\app.js' ]
+}
+node:internal/modules/cjs/loader:936
+  throw err;
+  ^
+
+Error: Cannot find module '@trustwallet/wallet-core'
+Require stack:
+- C:\Apache24\htdocs\getpaidcrypto.online\api\app.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Server.<anonymous> (C:\Apache24\htdocs\getpaidcrypto.online\api\app.js:116:24)
+    at Server.emit (node:events:527:28)
+    at parserOnIncoming (node:_http_server:956:12)
+    at HTTPParser.parserOnHeadersComplete (node:_http_common:128:17) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ 'C:\\Apache24\\htdocs\\getpaidcrypto.online\\api\\app.js' ]
+}
+node:internal/modules/cjs/loader:936
+  throw err;
+  ^
+
+Error: Cannot find module '@trustwallet/wallet-core'
+Require stack:
+- C:\Apache24\htdocs\getpaidcrypto.online\api\app.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Server.<anonymous> (C:\Apache24\htdocs\getpaidcrypto.online\api\app.js:116:24)
+    at Server.emit (node:events:527:28)
+    at parserOnIncoming (node:_http_server:956:12)
+    at HTTPParser.parserOnHeadersComplete (node:_http_common:128:17) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ 'C:\\Apache24\\htdocs\\getpaidcrypto.online\\api\\app.js' ]
+}
+node:internal/modules/cjs/loader:936
+  throw err;
+  ^
+
+Error: Cannot find module '@trustwallet/wallet-core'
+Require stack:
+- C:\Apache24\htdocs\getpaidcrypto.online\api\app.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Server.<anonymous> (C:\Apache24\htdocs\getpaidcrypto.online\api\app.js:116:24)
+    at Server.emit (node:events:527:28)
+    at parserOnIncoming (node:_http_server:956:12)
+    at HTTPParser.parserOnHeadersComplete (node:_http_common:128:17) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ 'C:\\Apache24\\htdocs\\getpaidcrypto.online\\api\\app.js' ]
+}
+node:internal/modules/cjs/loader:936
+  throw err;
+  ^
+
+Error: Cannot find module '@trustwallet/wallet-core'
+Require stack:
+- C:\Apache24\htdocs\getpaidcrypto.online\api\app.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Server.<anonymous> (C:\Apache24\htdocs\getpaidcrypto.online\api\app.js:116:24)
+    at Server.emit (node:events:527:28)
+    at parserOnIncoming (node:_http_server:956:12)
+    at HTTPParser.parserOnHeadersComplete (node:_http_common:128:17) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ 'C:\\Apache24\\htdocs\\getpaidcrypto.online\\api\\app.js' ]
+}
+node:internal/modules/cjs/loader:936
+  throw err;
+  ^
+
+Error: Cannot find module '@trustwallet/wallet-core'
+Require stack:
+- C:\Apache24\htdocs\getpaidcrypto.online\api\app.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Server.<anonymous> (C:\Apache24\htdocs\getpaidcrypto.online\api\app.js:116:24)
+    at Server.emit (node:events:527:28)
+    at parserOnIncoming (node:_http_server:956:12)
+    at HTTPParser.parserOnHeadersComplete (node:_http_common:128:17) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ 'C:\\Apache24\\htdocs\\getpaidcrypto.online\\api\\app.js' ]
+}
+node:internal/modules/cjs/loader:936
+  throw err;
+  ^
+
+Error: Cannot find module '@trustwallet/wallet-core'
+Require stack:
+- C:\Apache24\htdocs\getpaidcrypto.online\api\app.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Server.<anonymous> (C:\Apache24\htdocs\getpaidcrypto.online\api\app.js:116:24)
+    at Server.emit (node:events:527:28)
+    at parserOnIncoming (node:_http_server:956:12)
+    at HTTPParser.parserOnHeadersComplete (node:_http_common:128:17) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ 'C:\\Apache24\\htdocs\\getpaidcrypto.online\\api\\app.js' ]
+}
+node:internal/modules/cjs/loader:936
+  throw err;
+  ^
+
+Error: Cannot find module '@trustwallet/wallet-core'
+Require stack:
+- C:\Apache24\htdocs\getpaidcrypto.online\api\app.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Server.<anonymous> (C:\Apache24\htdocs\getpaidcrypto.online\api\app.js:116:24)
+    at Server.emit (node:events:527:28)
+    at parserOnIncoming (node:_http_server:956:12)
+    at HTTPParser.parserOnHeadersComplete (node:_http_common:128:17) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ 'C:\\Apache24\\htdocs\\getpaidcrypto.online\\api\\app.js' ]
+}
+node:internal/modules/cjs/loader:936
+  throw err;
+  ^
+
+Error: Cannot find module '@trustwallet/wallet-core'
+Require stack:
+- C:\Apache24\htdocs\getpaidcrypto.online\api\app.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Server.<anonymous> (C:\Apache24\htdocs\getpaidcrypto.online\api\app.js:116:24)
+    at Server.emit (node:events:527:28)
+    at parserOnIncoming (node:_http_server:956:12)
+    at HTTPParser.parserOnHeadersComplete (node:_http_common:128:17) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ 'C:\\Apache24\\htdocs\\getpaidcrypto.online\\api\\app.js' ]
+}
+node:internal/modules/cjs/loader:936
+  throw err;
+  ^
+
+Error: Cannot find module '@trustwallet/wallet-core'
+Require stack:
+- C:\Apache24\htdocs\getpaidcrypto.online\api\app.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Server.<anonymous> (C:\Apache24\htdocs\getpaidcrypto.online\api\app.js:116:24)
+    at Server.emit (node:events:527:28)
+    at parserOnIncoming (node:_http_server:956:12)
+    at HTTPParser.parserOnHeadersComplete (node:_http_common:128:17) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ 'C:\\Apache24\\htdocs\\getpaidcrypto.online\\api\\app.js' ]
+}
+node:internal/modules/cjs/loader:936
+  throw err;
+  ^
+
+Error: Cannot find module '@trustwallet/wallet-core'
+Require stack:
+- C:\Apache24\htdocs\getpaidcrypto.online\api\app.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Server.<anonymous> (C:\Apache24\htdocs\getpaidcrypto.online\api\app.js:116:24)
+    at Server.emit (node:events:527:28)
+    at parserOnIncoming (node:_http_server:956:12)
+    at HTTPParser.parserOnHeadersComplete (node:_http_common:128:17) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ 'C:\\Apache24\\htdocs\\getpaidcrypto.online\\api\\app.js' ]
+}
+node:internal/modules/cjs/loader:936
+  throw err;
+  ^
+
+Error: Cannot find module '@trustwallet/wallet-core'
+Require stack:
+- C:\Apache24\htdocs\getpaidcrypto.online\api\app.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Server.<anonymous> (C:\Apache24\htdocs\getpaidcrypto.online\api\app.js:116:24)
+    at Server.emit (node:events:527:28)
+    at parserOnIncoming (node:_http_server:956:12)
+    at HTTPParser.parserOnHeadersComplete (node:_http_common:128:17) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ 'C:\\Apache24\\htdocs\\getpaidcrypto.online\\api\\app.js' ]
+}
+node:internal/modules/cjs/loader:936
+  throw err;
+  ^
+
+Error: Cannot find module '@trustwallet/wallet-core'
+Require stack:
+- C:\Apache24\htdocs\getpaidcrypto.online\api\app.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Server.<anonymous> (C:\Apache24\htdocs\getpaidcrypto.online\api\app.js:116:24)
+    at Server.emit (node:events:527:28)
+    at parserOnIncoming (node:_http_server:956:12)
+    at HTTPParser.parserOnHeadersComplete (node:_http_common:128:17) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ 'C:\\Apache24\\htdocs\\getpaidcrypto.online\\api\\app.js' ]
+}
+node:internal/modules/cjs/loader:936
+  throw err;
+  ^
+
+Error: Cannot find module '@trustwallet/wallet-core'
+Require stack:
+- C:\Apache24\htdocs\getpaidcrypto.online\api\app.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Server.<anonymous> (C:\Apache24\htdocs\getpaidcrypto.online\api\app.js:116:24)
+    at Server.emit (node:events:527:28)
+    at parserOnIncoming (node:_http_server:956:12)
+    at HTTPParser.parserOnHeadersComplete (node:_http_common:128:17) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ 'C:\\Apache24\\htdocs\\getpaidcrypto.online\\api\\app.js' ]
+}
+(node:3516) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 unhandledRejection listeners added to [process]. Use emitter.setMaxListeners() to increase limit
+(Use `node --trace-warnings ...` to show where the warning was created)
+C:\Apache24\htdocs\getpaidcrypto.online\api\node_modules\@trustwallet\wallet-core\dist\lib\wallet-core.js:14
+return a};ja=(a,b,c)=>{a=ma(a)?new URL(a):la.normalize(a);fs.readFile(a,function(d,e){d?c(d):b(e.buffer)})};1<process.argv.length&&(da=process.argv[1].replace(/\\/g,"/"));process.argv.slice(2);process.on("uncaughtException",function(a){throw a;});process.on("unhandledRejection",function(a){throw a;});g.inspect=function(){return"[Emscripten Module object]"}}else if(ha){if("object"==typeof process&&"function"===typeof require||"object"==typeof window||"function"==typeof importScripts)throw Error("not compiled for this environment (did you build to HTML and try to run it not on the web, or set ENVIRONMENT to something - like node - and run it someplace else - like on the web?)");
+                                                                                                                                                                                                                                            ^
+
+MoneroRpcError: RequestError: Error: connect ETIMEDOUT 70.35.142.2:18089
+    at MoneroRpcConnection.sendJsonRequest (C:\Apache24\htdocs\getpaidcrypto.online\api\node_modules\@rino-wallet\monero-javascript\src\main\js\common\MoneroRpcConnection.js:263:18)
+    at async MoneroDaemonRpc.getHeight (C:\Apache24\htdocs\getpaidcrypto.online\api\node_modules\@rino-wallet\monero-javascript\src\main\js\daemon\MoneroDaemonRpc.js:257:16)
+    at async C:\Apache24\htdocs\getpaidcrypto.online\api\app.js:62:26 {
+  code: undefined,
+  rpcMethod: 'get_block_count',
+  rpcParams: undefined
+}
+C:\Apache24\htdocs\getpaidcrypto.online\api\node_modules\@trustwallet\wallet-core\dist\lib\wallet-core.js:14
+return a};ja=(a,b,c)=>{a=ma(a)?new URL(a):la.normalize(a);fs.readFile(a,function(d,e){d?c(d):b(e.buffer)})};1<process.argv.length&&(da=process.argv[1].replace(/\\/g,"/"));process.argv.slice(2);process.on("uncaughtException",function(a){throw a;});process.on("unhandledRejection",function(a){throw a;});g.inspect=function(){return"[Emscripten Module object]"}}else if(ha){if("object"==typeof process&&"function"===typeof require||"object"==typeof window||"function"==typeof importScripts)throw Error("not compiled for this environment (did you build to HTML and try to run it not on the web, or set ENVIRONMENT to something - like node - and run it someplace else - like on the web?)");
+                                                                                                                                                                                                                                            ^
+
+MoneroRpcError: RequestError: Error: connect ETIMEDOUT 82.153.138.100:18089
+    at MoneroRpcConnection.sendJsonRequest (C:\Apache24\htdocs\getpaidcrypto.online\api\node_modules\@rino-wallet\monero-javascript\src\main\js\common\MoneroRpcConnection.js:263:18)
+    at async MoneroDaemonRpc.getHeight (C:\Apache24\htdocs\getpaidcrypto.online\api\node_modules\@rino-wallet\monero-javascript\src\main\js\daemon\MoneroDaemonRpc.js:257:16)
+    at async C:\Apache24\htdocs\getpaidcrypto.online\api\app.js:62:26 {
+  code: undefined,
+  rpcMethod: 'get_block_count',
+  rpcParams: undefined
+}
+C:\Apache24\htdocs\getpaidcrypto.online\api\node_modules\@trustwallet\wallet-core\dist\lib\wallet-core.js:14
+return a};ja=(a,b,c)=>{a=ma(a)?new URL(a):la.normalize(a);fs.readFile(a,function(d,e){d?c(d):b(e.buffer)})};1<process.argv.length&&(da=process.argv[1].replace(/\\/g,"/"));process.argv.slice(2);process.on("uncaughtException",function(a){throw a;});process.on("unhandledRejection",function(a){throw a;});g.inspect=function(){return"[Emscripten Module object]"}}else if(ha){if("object"==typeof process&&"function"===typeof require||"object"==typeof window||"function"==typeof importScripts)throw Error("not compiled for this environment (did you build to HTML and try to run it not on the web, or set ENVIRONMENT to something - like node - and run it someplace else - like on the web?)");
+                                                                                                                                                                                                                                            ^
+
+MoneroRpcError: RequestError: Error: connect ETIMEDOUT 82.153.138.100:18089
+    at MoneroRpcConnection.sendJsonRequest (C:\Apache24\htdocs\getpaidcrypto.online\api\node_modules\@rino-wallet\monero-javascript\src\main\js\common\MoneroRpcConnection.js:263:18)
+    at async MoneroDaemonRpc.getHeight (C:\Apache24\htdocs\getpaidcrypto.online\api\node_modules\@rino-wallet\monero-javascript\src\main\js\daemon\MoneroDaemonRpc.js:257:16)
+    at async C:\Apache24\htdocs\getpaidcrypto.online\api\app.js:62:26 {
+  code: undefined,
+  rpcMethod: 'get_block_count',
+  rpcParams: undefined
+}

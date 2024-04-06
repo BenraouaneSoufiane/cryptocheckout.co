@@ -1,0 +1,386 @@
+MoneroError: Stagenet wallet cannot be opened as mainnet wallet
+    at callbackFn (C:\Apache24\htdocs\crypto.translatewp.online\api\node_modules\@rino-wallet\monero-javascript\src\main\js\wallet\MoneroWalletFull.js:1840:54)
+    at __emval_call (C:\Apache24\htdocs\crypto.translatewp.online\api\node_modules\@rino-wallet\monero-javascript\dist\monero_wallet_full.js:9:130656)
+    at wasm://wasm/01778332:wasm-function[3237]:0x11a9c5
+    at wasm://wasm/01778332:wasm-function[10872]:0x424a99
+    at ret.<computed> (C:\Apache24\htdocs\crypto.translatewp.online\api\node_modules\@rino-wallet\monero-javascript\dist\monero_wallet_full.js:9:116551)
+    at Module.dynCall_viii (C:\Apache24\htdocs\crypto.translatewp.online\api\node_modules\@rino-wallet\monero-javascript\dist\monero_wallet_full.js:9:379711)
+    at invoke_viii (C:\Apache24\htdocs\crypto.translatewp.online\api\node_modules\@rino-wallet\monero-javascript\dist\monero_wallet_full.js:9:388825)
+    at wasm://wasm/01778332:wasm-function[8935]:0x3a0d8c
+    at wasm://wasm/01778332:wasm-function[8969]:0x3a4d2b
+    at wasm://wasm/01778332:wasm-function[10860]:0x423fc1
+    at ret.<computed> (C:\Apache24\htdocs\crypto.translatewp.online\api\node_modules\@rino-wallet\monero-javascript\dist\monero_wallet_full.js:9:116551)
+    at Module.dynCall_viiiiiiiiii (C:\Apache24\htdocs\crypto.translatewp.online\api\node_modules\@rino-wallet\monero-javascript\dist\monero_wallet_full.js:9:384091)
+    at dynCallLegacy (C:\Apache24\htdocs\crypto.translatewp.online\api\node_modules\@rino-wallet\monero-javascript\dist\monero_wallet_full.js:9:122834)
+    at dynCall (C:\Apache24\htdocs\crypto.translatewp.online\api\node_modules\@rino-wallet\monero-javascript\dist\monero_wallet_full.js:9:122920)
+    at C:\Apache24\htdocs\crypto.translatewp.online\api\node_modules\@rino-wallet\monero-javascript\dist\monero_wallet_full.js:9:123114
+    at Object.open_wallet_full (C:\Apache24\htdocs\crypto.translatewp.online\api\node_modules\@rino-wallet\monero-javascript\dist\monero_wallet_full.js:9:120667)
+    at C:\Apache24\htdocs\crypto.translatewp.online\api\node_modules\@rino-wallet\monero-javascript\src\main\js\wallet\MoneroWalletFull.js:1845:16
+    at new Promise (<anonymous>)
+    at C:\Apache24\htdocs\crypto.translatewp.online\api\node_modules\@rino-wallet\monero-javascript\src\main\js\wallet\MoneroWalletFull.js:1832:14
+    at C:\Apache24\htdocs\crypto.translatewp.online\api\node_modules\@rino-wallet\monero-javascript\src\main\js\common\ThreadPool.js:21:12
+    at C:\Apache24\htdocs\crypto.translatewp.online\api\node_modules\async\dist\async.js:4099:9
+    at Object.process (C:\Apache24\htdocs\crypto.translatewp.online\api\node_modules\async\dist\async.js:2347:17) {
+  code: undefined
+}
+MoneroError: Stagenet wallet cannot be opened as mainnet wallet
+    at callbackFn (C:\Apache24\htdocs\crypto.translatewp.online\api\node_modules\@rino-wallet\monero-javascript\src\main\js\wallet\MoneroWalletFull.js:1840:54)
+    at __emval_call (C:\Apache24\htdocs\crypto.translatewp.online\api\node_modules\@rino-wallet\monero-javascript\dist\monero_wallet_full.js:9:130656)
+    at wasm://wasm/01778332:wasm-function[3237]:0x11a9c5
+    at wasm://wasm/01778332:wasm-function[10872]:0x424a99
+    at ret.<computed> (C:\Apache24\htdocs\crypto.translatewp.online\api\node_modules\@rino-wallet\monero-javascript\dist\monero_wallet_full.js:9:116551)
+    at invoke_viii (C:\Apache24\htdocs\crypto.translatewp.online\api\node_modules\@rino-wallet\monero-javascript\dist\monero_wallet_full.js:9:388825)
+    at wasm://wasm/01778332:wasm-function[8935]:0x3a0d8c
+    at wasm://wasm/01778332:wasm-function[8969]:0x3a4d2b
+    at wasm://wasm/01778332:wasm-function[10860]:0x423fc1
+    at ret.<computed> (C:\Apache24\htdocs\crypto.translatewp.online\api\node_modules\@rino-wallet\monero-javascript\dist\monero_wallet_full.js:9:116551)
+    at dynCallLegacy (C:\Apache24\htdocs\crypto.translatewp.online\api\node_modules\@rino-wallet\monero-javascript\dist\monero_wallet_full.js:9:122834)
+    at dynCall (C:\Apache24\htdocs\crypto.translatewp.online\api\node_modules\@rino-wallet\monero-javascript\dist\monero_wallet_full.js:9:122920)
+    at C:\Apache24\htdocs\crypto.translatewp.online\api\node_modules\@rino-wallet\monero-javascript\dist\monero_wallet_full.js:9:123114
+    at Object.open_wallet_full (C:\Apache24\htdocs\crypto.translatewp.online\api\node_modules\@rino-wallet\monero-javascript\dist\monero_wallet_full.js:9:120667)
+    at C:\Apache24\htdocs\crypto.translatewp.online\api\node_modules\@rino-wallet\monero-javascript\src\main\js\wallet\MoneroWalletFull.js:1845:16
+    at new Promise (<anonymous>)
+    at C:\Apache24\htdocs\crypto.translatewp.online\api\node_modules\@rino-wallet\monero-javascript\src\main\js\wallet\MoneroWalletFull.js:1832:14
+    at C:\Apache24\htdocs\crypto.translatewp.online\api\node_modules\@rino-wallet\monero-javascript\src\main\js\common\ThreadPool.js:21:12
+    at C:\Apache24\htdocs\crypto.translatewp.online\api\node_modules\async\dist\async.js:4099:9
+    at Object.process (C:\Apache24\htdocs\crypto.translatewp.online\api\node_modules\async\dist\async.js:2347:17)
+    at C:\Apache24\htdocs\crypto.translatewp.online\api\node_modules\async\dist\async.js:2255:19
+    at Immediate.<anonymous> (C:\Apache24\htdocs\crypto.translatewp.online\api\node_modules\async\dist\async.js:119:16) {
+  code: undefined
+}
+0.25
+2860419
+2860423
+1681033038887
+0.5
+2860419
+2860423
+1681033038887
+0.75
+2860419
+2860423
+1681033038887
+1
+2860419
+2860423
+1681033038887
+MoneroError: Stagenet wallet cannot be opened as mainnet wallet
+    at callbackFn (C:\Apache24\htdocs\crypto.translatewp.online\api\node_modules\@rino-wallet\monero-javascript\src\main\js\wallet\MoneroWalletFull.js:1840:54)
+    at __emval_call (C:\Apache24\htdocs\crypto.translatewp.online\api\node_modules\@rino-wallet\monero-javascript\dist\monero_wallet_full.js:9:130656)
+    at wasm://wasm/01778332:wasm-function[3237]:0x11a9c5
+    at wasm://wasm/01778332:wasm-function[10872]:0x424a99
+    at ret.<computed> (C:\Apache24\htdocs\crypto.translatewp.online\api\node_modules\@rino-wallet\monero-javascript\dist\monero_wallet_full.js:9:116551)
+    at invoke_viii (C:\Apache24\htdocs\crypto.translatewp.online\api\node_modules\@rino-wallet\monero-javascript\dist\monero_wallet_full.js:9:388825)
+    at wasm://wasm/01778332:wasm-function[8935]:0x3a0d8c
+    at wasm://wasm/01778332:wasm-function[8969]:0x3a4d2b
+    at wasm://wasm/01778332:wasm-function[10860]:0x423fc1
+    at ret.<computed> (C:\Apache24\htdocs\crypto.translatewp.online\api\node_modules\@rino-wallet\monero-javascript\dist\monero_wallet_full.js:9:116551)
+    at dynCallLegacy (C:\Apache24\htdocs\crypto.translatewp.online\api\node_modules\@rino-wallet\monero-javascript\dist\monero_wallet_full.js:9:122834)
+    at dynCall (C:\Apache24\htdocs\crypto.translatewp.online\api\node_modules\@rino-wallet\monero-javascript\dist\monero_wallet_full.js:9:122920)
+    at C:\Apache24\htdocs\crypto.translatewp.online\api\node_modules\@rino-wallet\monero-javascript\dist\monero_wallet_full.js:9:123114
+    at Object.open_wallet_full (C:\Apache24\htdocs\crypto.translatewp.online\api\node_modules\@rino-wallet\monero-javascript\dist\monero_wallet_full.js:9:120667)
+    at C:\Apache24\htdocs\crypto.translatewp.online\api\node_modules\@rino-wallet\monero-javascript\src\main\js\wallet\MoneroWalletFull.js:1845:16
+    at new Promise (<anonymous>)
+    at C:\Apache24\htdocs\crypto.translatewp.online\api\node_modules\@rino-wallet\monero-javascript\src\main\js\wallet\MoneroWalletFull.js:1832:14
+    at C:\Apache24\htdocs\crypto.translatewp.online\api\node_modules\@rino-wallet\monero-javascript\src\main\js\common\ThreadPool.js:21:12
+    at C:\Apache24\htdocs\crypto.translatewp.online\api\node_modules\async\dist\async.js:4099:9
+    at Object.process (C:\Apache24\htdocs\crypto.translatewp.online\api\node_modules\async\dist\async.js:2347:17)
+    at C:\Apache24\htdocs\crypto.translatewp.online\api\node_modules\async\dist\async.js:2255:19
+    at Immediate.<anonymous> (C:\Apache24\htdocs\crypto.translatewp.online\api\node_modules\async\dist\async.js:119:16) {
+  code: undefined
+}
+MoneroError: Stagenet wallet cannot be opened as mainnet wallet
+    at callbackFn (C:\Apache24\htdocs\crypto.translatewp.online\api\node_modules\@rino-wallet\monero-javascript\src\main\js\wallet\MoneroWalletFull.js:1840:54)
+    at __emval_call (C:\Apache24\htdocs\crypto.translatewp.online\api\node_modules\@rino-wallet\monero-javascript\dist\monero_wallet_full.js:9:130656)
+    at wasm://wasm/01778332:wasm-function[3237]:0x11a9c5
+    at wasm://wasm/01778332:wasm-function[10872]:0x424a99
+    at ret.<computed> (C:\Apache24\htdocs\crypto.translatewp.online\api\node_modules\@rino-wallet\monero-javascript\dist\monero_wallet_full.js:9:116551)
+    at invoke_viii (C:\Apache24\htdocs\crypto.translatewp.online\api\node_modules\@rino-wallet\monero-javascript\dist\monero_wallet_full.js:9:388825)
+    at wasm://wasm/01778332:wasm-function[8935]:0x3a0d8c
+    at wasm://wasm/01778332:wasm-function[8969]:0x3a4d2b
+    at wasm://wasm/01778332:wasm-function[10860]:0x423fc1
+    at ret.<computed> (C:\Apache24\htdocs\crypto.translatewp.online\api\node_modules\@rino-wallet\monero-javascript\dist\monero_wallet_full.js:9:116551)
+    at dynCallLegacy (C:\Apache24\htdocs\crypto.translatewp.online\api\node_modules\@rino-wallet\monero-javascript\dist\monero_wallet_full.js:9:122834)
+    at dynCall (C:\Apache24\htdocs\crypto.translatewp.online\api\node_modules\@rino-wallet\monero-javascript\dist\monero_wallet_full.js:9:122920)
+    at C:\Apache24\htdocs\crypto.translatewp.online\api\node_modules\@rino-wallet\monero-javascript\dist\monero_wallet_full.js:9:123114
+    at Object.open_wallet_full (C:\Apache24\htdocs\crypto.translatewp.online\api\node_modules\@rino-wallet\monero-javascript\dist\monero_wallet_full.js:9:120667)
+    at C:\Apache24\htdocs\crypto.translatewp.online\api\node_modules\@rino-wallet\monero-javascript\src\main\js\wallet\MoneroWalletFull.js:1845:16
+    at new Promise (<anonymous>)
+    at C:\Apache24\htdocs\crypto.translatewp.online\api\node_modules\@rino-wallet\monero-javascript\src\main\js\wallet\MoneroWalletFull.js:1832:14
+    at C:\Apache24\htdocs\crypto.translatewp.online\api\node_modules\@rino-wallet\monero-javascript\src\main\js\common\ThreadPool.js:21:12
+    at C:\Apache24\htdocs\crypto.translatewp.online\api\node_modules\async\dist\async.js:4099:9
+    at Object.process (C:\Apache24\htdocs\crypto.translatewp.online\api\node_modules\async\dist\async.js:2347:17)
+    at C:\Apache24\htdocs\crypto.translatewp.online\api\node_modules\async\dist\async.js:2255:19
+    at Immediate.<anonymous> (C:\Apache24\htdocs\crypto.translatewp.online\api\node_modules\async\dist\async.js:119:16) {
+  code: undefined
+}
+1
+2860423
+2860424
+1681033038887
+MoneroError: Stagenet wallet cannot be opened as mainnet wallet
+    at callbackFn (C:\Apache24\htdocs\crypto.translatewp.online\api\node_modules\@rino-wallet\monero-javascript\src\main\js\wallet\MoneroWalletFull.js:1840:54)
+    at __emval_call (C:\Apache24\htdocs\crypto.translatewp.online\api\node_modules\@rino-wallet\monero-javascript\dist\monero_wallet_full.js:9:130656)
+    at wasm://wasm/01778332:wasm-function[3237]:0x11a9c5
+    at wasm://wasm/01778332:wasm-function[10872]:0x424a99
+    at ret.<computed> (C:\Apache24\htdocs\crypto.translatewp.online\api\node_modules\@rino-wallet\monero-javascript\dist\monero_wallet_full.js:9:116551)
+    at invoke_viii (C:\Apache24\htdocs\crypto.translatewp.online\api\node_modules\@rino-wallet\monero-javascript\dist\monero_wallet_full.js:9:388825)
+    at wasm://wasm/01778332:wasm-function[8935]:0x3a0d8c
+    at wasm://wasm/01778332:wasm-function[8969]:0x3a4d2b
+    at wasm://wasm/01778332:wasm-function[10860]:0x423fc1
+    at ret.<computed> (C:\Apache24\htdocs\crypto.translatewp.online\api\node_modules\@rino-wallet\monero-javascript\dist\monero_wallet_full.js:9:116551)
+    at dynCallLegacy (C:\Apache24\htdocs\crypto.translatewp.online\api\node_modules\@rino-wallet\monero-javascript\dist\monero_wallet_full.js:9:122834)
+    at dynCall (C:\Apache24\htdocs\crypto.translatewp.online\api\node_modules\@rino-wallet\monero-javascript\dist\monero_wallet_full.js:9:122920)
+    at C:\Apache24\htdocs\crypto.translatewp.online\api\node_modules\@rino-wallet\monero-javascript\dist\monero_wallet_full.js:9:123114
+    at Object.open_wallet_full (C:\Apache24\htdocs\crypto.translatewp.online\api\node_modules\@rino-wallet\monero-javascript\dist\monero_wallet_full.js:9:120667)
+    at C:\Apache24\htdocs\crypto.translatewp.online\api\node_modules\@rino-wallet\monero-javascript\src\main\js\wallet\MoneroWalletFull.js:1845:16
+    at new Promise (<anonymous>)
+    at C:\Apache24\htdocs\crypto.translatewp.online\api\node_modules\@rino-wallet\monero-javascript\src\main\js\wallet\MoneroWalletFull.js:1832:14
+    at C:\Apache24\htdocs\crypto.translatewp.online\api\node_modules\@rino-wallet\monero-javascript\src\main\js\common\ThreadPool.js:21:12
+    at C:\Apache24\htdocs\crypto.translatewp.online\api\node_modules\async\dist\async.js:4099:9
+    at Object.process (C:\Apache24\htdocs\crypto.translatewp.online\api\node_modules\async\dist\async.js:2347:17)
+    at C:\Apache24\htdocs\crypto.translatewp.online\api\node_modules\async\dist\async.js:2255:19
+    at Immediate.<anonymous> (C:\Apache24\htdocs\crypto.translatewp.online\api\node_modules\async\dist\async.js:119:16) {
+  code: undefined
+}
+MoneroError: Stagenet wallet cannot be opened as mainnet wallet
+    at callbackFn (C:\Apache24\htdocs\crypto.translatewp.online\api\node_modules\@rino-wallet\monero-javascript\src\main\js\wallet\MoneroWalletFull.js:1840:54)
+    at __emval_call (C:\Apache24\htdocs\crypto.translatewp.online\api\node_modules\@rino-wallet\monero-javascript\dist\monero_wallet_full.js:9:130656)
+    at wasm://wasm/01778332:wasm-function[3237]:0x11a9c5
+    at wasm://wasm/01778332:wasm-function[10872]:0x424a99
+    at ret.<computed> (C:\Apache24\htdocs\crypto.translatewp.online\api\node_modules\@rino-wallet\monero-javascript\dist\monero_wallet_full.js:9:116551)
+    at invoke_viii (C:\Apache24\htdocs\crypto.translatewp.online\api\node_modules\@rino-wallet\monero-javascript\dist\monero_wallet_full.js:9:388825)
+    at wasm://wasm/01778332:wasm-function[8935]:0x3a0d8c
+    at wasm://wasm/01778332:wasm-function[8969]:0x3a4d2b
+    at wasm://wasm/01778332:wasm-function[10860]:0x423fc1
+    at ret.<computed> (C:\Apache24\htdocs\crypto.translatewp.online\api\node_modules\@rino-wallet\monero-javascript\dist\monero_wallet_full.js:9:116551)
+    at dynCallLegacy (C:\Apache24\htdocs\crypto.translatewp.online\api\node_modules\@rino-wallet\monero-javascript\dist\monero_wallet_full.js:9:122834)
+    at dynCall (C:\Apache24\htdocs\crypto.translatewp.online\api\node_modules\@rino-wallet\monero-javascript\dist\monero_wallet_full.js:9:122920)
+    at C:\Apache24\htdocs\crypto.translatewp.online\api\node_modules\@rino-wallet\monero-javascript\dist\monero_wallet_full.js:9:123114
+    at Object.open_wallet_full (C:\Apache24\htdocs\crypto.translatewp.online\api\node_modules\@rino-wallet\monero-javascript\dist\monero_wallet_full.js:9:120667)
+    at C:\Apache24\htdocs\crypto.translatewp.online\api\node_modules\@rino-wallet\monero-javascript\src\main\js\wallet\MoneroWalletFull.js:1845:16
+    at new Promise (<anonymous>)
+    at C:\Apache24\htdocs\crypto.translatewp.online\api\node_modules\@rino-wallet\monero-javascript\src\main\js\wallet\MoneroWalletFull.js:1832:14
+    at C:\Apache24\htdocs\crypto.translatewp.online\api\node_modules\@rino-wallet\monero-javascript\src\main\js\common\ThreadPool.js:21:12
+    at C:\Apache24\htdocs\crypto.translatewp.online\api\node_modules\async\dist\async.js:4099:9
+    at Object.process (C:\Apache24\htdocs\crypto.translatewp.online\api\node_modules\async\dist\async.js:2347:17)
+    at C:\Apache24\htdocs\crypto.translatewp.online\api\node_modules\async\dist\async.js:2255:19
+    at Immediate.<anonymous> (C:\Apache24\htdocs\crypto.translatewp.online\api\node_modules\async\dist\async.js:119:16) {
+  code: undefined
+}
+1
+2860424
+2860425
+1681033038887
+MoneroError: Stagenet wallet cannot be opened as mainnet wallet
+    at callbackFn (C:\Apache24\htdocs\crypto.translatewp.online\api\node_modules\@rino-wallet\monero-javascript\src\main\js\wallet\MoneroWalletFull.js:1840:54)
+    at __emval_call (C:\Apache24\htdocs\crypto.translatewp.online\api\node_modules\@rino-wallet\monero-javascript\dist\monero_wallet_full.js:9:130656)
+    at wasm://wasm/01778332:wasm-function[3237]:0x11a9c5
+    at wasm://wasm/01778332:wasm-function[10872]:0x424a99
+    at ret.<computed> (C:\Apache24\htdocs\crypto.translatewp.online\api\node_modules\@rino-wallet\monero-javascript\dist\monero_wallet_full.js:9:116551)
+    at invoke_viii (C:\Apache24\htdocs\crypto.translatewp.online\api\node_modules\@rino-wallet\monero-javascript\dist\monero_wallet_full.js:9:388825)
+    at wasm://wasm/01778332:wasm-function[8935]:0x3a0d8c
+    at wasm://wasm/01778332:wasm-function[8969]:0x3a4d2b
+    at wasm://wasm/01778332:wasm-function[10860]:0x423fc1
+    at ret.<computed> (C:\Apache24\htdocs\crypto.translatewp.online\api\node_modules\@rino-wallet\monero-javascript\dist\monero_wallet_full.js:9:116551)
+    at dynCallLegacy (C:\Apache24\htdocs\crypto.translatewp.online\api\node_modules\@rino-wallet\monero-javascript\dist\monero_wallet_full.js:9:122834)
+    at dynCall (C:\Apache24\htdocs\crypto.translatewp.online\api\node_modules\@rino-wallet\monero-javascript\dist\monero_wallet_full.js:9:122920)
+    at C:\Apache24\htdocs\crypto.translatewp.online\api\node_modules\@rino-wallet\monero-javascript\dist\monero_wallet_full.js:9:123114
+    at Object.open_wallet_full (C:\Apache24\htdocs\crypto.translatewp.online\api\node_modules\@rino-wallet\monero-javascript\dist\monero_wallet_full.js:9:120667)
+    at C:\Apache24\htdocs\crypto.translatewp.online\api\node_modules\@rino-wallet\monero-javascript\src\main\js\wallet\MoneroWalletFull.js:1845:16
+    at new Promise (<anonymous>)
+    at C:\Apache24\htdocs\crypto.translatewp.online\api\node_modules\@rino-wallet\monero-javascript\src\main\js\wallet\MoneroWalletFull.js:1832:14
+    at C:\Apache24\htdocs\crypto.translatewp.online\api\node_modules\@rino-wallet\monero-javascript\src\main\js\common\ThreadPool.js:21:12
+    at C:\Apache24\htdocs\crypto.translatewp.online\api\node_modules\async\dist\async.js:4099:9
+    at Object.process (C:\Apache24\htdocs\crypto.translatewp.online\api\node_modules\async\dist\async.js:2347:17)
+    at C:\Apache24\htdocs\crypto.translatewp.online\api\node_modules\async\dist\async.js:2255:19
+    at Immediate.<anonymous> (C:\Apache24\htdocs\crypto.translatewp.online\api\node_modules\async\dist\async.js:119:16) {
+  code: undefined
+}
+MoneroError: Stagenet wallet cannot be opened as mainnet wallet
+    at callbackFn (C:\Apache24\htdocs\crypto.translatewp.online\api\node_modules\@rino-wallet\monero-javascript\src\main\js\wallet\MoneroWalletFull.js:1840:54)
+    at __emval_call (C:\Apache24\htdocs\crypto.translatewp.online\api\node_modules\@rino-wallet\monero-javascript\dist\monero_wallet_full.js:9:130656)
+    at wasm://wasm/01778332:wasm-function[3237]:0x11a9c5
+    at wasm://wasm/01778332:wasm-function[10872]:0x424a99
+    at ret.<computed> (C:\Apache24\htdocs\crypto.translatewp.online\api\node_modules\@rino-wallet\monero-javascript\dist\monero_wallet_full.js:9:116551)
+    at invoke_viii (C:\Apache24\htdocs\crypto.translatewp.online\api\node_modules\@rino-wallet\monero-javascript\dist\monero_wallet_full.js:9:388825)
+    at wasm://wasm/01778332:wasm-function[8935]:0x3a0d8c
+    at wasm://wasm/01778332:wasm-function[8969]:0x3a4d2b
+    at wasm://wasm/01778332:wasm-function[10860]:0x423fc1
+    at ret.<computed> (C:\Apache24\htdocs\crypto.translatewp.online\api\node_modules\@rino-wallet\monero-javascript\dist\monero_wallet_full.js:9:116551)
+    at dynCallLegacy (C:\Apache24\htdocs\crypto.translatewp.online\api\node_modules\@rino-wallet\monero-javascript\dist\monero_wallet_full.js:9:122834)
+    at dynCall (C:\Apache24\htdocs\crypto.translatewp.online\api\node_modules\@rino-wallet\monero-javascript\dist\monero_wallet_full.js:9:122920)
+    at C:\Apache24\htdocs\crypto.translatewp.online\api\node_modules\@rino-wallet\monero-javascript\dist\monero_wallet_full.js:9:123114
+    at Object.open_wallet_full (C:\Apache24\htdocs\crypto.translatewp.online\api\node_modules\@rino-wallet\monero-javascript\dist\monero_wallet_full.js:9:120667)
+    at C:\Apache24\htdocs\crypto.translatewp.online\api\node_modules\@rino-wallet\monero-javascript\src\main\js\wallet\MoneroWalletFull.js:1845:16
+    at new Promise (<anonymous>)
+    at C:\Apache24\htdocs\crypto.translatewp.online\api\node_modules\@rino-wallet\monero-javascript\src\main\js\wallet\MoneroWalletFull.js:1832:14
+    at C:\Apache24\htdocs\crypto.translatewp.online\api\node_modules\@rino-wallet\monero-javascript\src\main\js\common\ThreadPool.js:21:12
+    at C:\Apache24\htdocs\crypto.translatewp.online\api\node_modules\async\dist\async.js:4099:9
+    at Object.process (C:\Apache24\htdocs\crypto.translatewp.online\api\node_modules\async\dist\async.js:2347:17)
+    at C:\Apache24\htdocs\crypto.translatewp.online\api\node_modules\async\dist\async.js:2255:19
+    at Immediate.<anonymous> (C:\Apache24\htdocs\crypto.translatewp.online\api\node_modules\async\dist\async.js:119:16) {
+  code: undefined
+}
+1
+2860425
+2860426
+1681033038887
+0.25
+2860426
+2860430
+1681033038887
+0.5
+2860426
+2860430
+1681033038887
+0.75
+2860426
+2860430
+1681033038887
+1
+2860426
+2860430
+1681033038887
+1
+2860429
+2860430
+1681033968153
+1
+2860430
+2860431
+1681033038887
+1
+2860430
+2860431
+1681033968153
+1
+2860431
+2860432
+1681033038887
+1
+2860431
+2860432
+1681033968153
+1
+2860432
+2860433
+1681033038887
+1
+2860432
+2860433
+1681033968153
+1
+2860433
+2860434
+1681033038887
+0.5
+2860433
+2860435
+1681033968153
+1
+2860433
+2860435
+1681033968153
+0.5
+2860434
+2860436
+1681033038887
+1
+2860434
+2860436
+1681033038887
+1
+2860435
+2860436
+1681033968153
+0.5
+2860436
+2860438
+1681033038887
+1
+2860436
+2860438
+1681033038887
+0.25
+2860436
+2860440
+1681033968153
+0.5
+2860436
+2860440
+1681033968153
+0.75
+2860436
+2860440
+1681033968153
+1
+2860436
+2860440
+1681033968153
+0.3333333333333333
+2860438
+2860441
+1681033038887
+0.6666666666666666
+2860438
+2860441
+1681033038887
+1
+2860438
+2860441
+1681033038887
+0.5
+2860440
+2860442
+1681033968153
+1
+2860440
+2860442
+1681033968153
+0.5
+2860441
+2860443
+1681033038887
+1
+2860441
+2860443
+1681033038887
+0.5
+2860442
+2860444
+1681033968153
+1
+2860442
+2860444
+1681033968153
+0.5
+2860443
+2860445
+1681033038887
+1
+2860443
+2860445
+1681033038887
+1
+2860444
+2860445
+1681033968153
+0.5
+2860445
+2860447
+1681033038887
+1
+2860445
+2860447
+1681033038887
+MoneroError: Wallet is not connected to daemon
+    at MoneroWalletFull.sync (C:\Apache24\htdocs\crypto.translatewp.online\api\node_modules\@rino-wallet\monero-javascript\src\main\js\wallet\MoneroWalletFull.js:677:52)
+    at async C:\Apache24\htdocs\crypto.translatewp.online\api\refreshmonero.js:79:40 {
+  code: undefined
+}
+MoneroError: Wallet is not connected to daemon
+    at MoneroWalletFull.sync (C:\Apache24\htdocs\crypto.translatewp.online\api\node_modules\@rino-wallet\monero-javascript\src\main\js\wallet\MoneroWalletFull.js:677:52)
+    at async C:\Apache24\htdocs\crypto.translatewp.online\api\refreshmonero.js:79:40 {
+  code: undefined
+}

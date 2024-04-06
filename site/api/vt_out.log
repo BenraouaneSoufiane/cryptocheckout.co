@@ -1,0 +1,40 @@
+MoneroError: Wallet does not exist at path: C:/Apache24/htdocs/getpaidcrypto.online/api/w/1692439288519
+    at Function.openWallet (C:\Apache24\htdocs\getpaidcrypto.online\api\node_modules\@rino-wallet\monero-javascript\src\main\js\wallet\MoneroWalletFull.js:130:59)
+    at Object.module.exports.openWalletFull (C:\Apache24\htdocs\getpaidcrypto.online\api\node_modules\@rino-wallet\monero-javascript\index.js:257:85)
+    at C:\Apache24\htdocs\getpaidcrypto.online\api\verifytransaction.js:22:41
+    at Server.<anonymous> (C:\Apache24\htdocs\getpaidcrypto.online\api\verifytransaction.js:62:3)
+    at Server.emit (node:events:527:28)
+    at parserOnIncoming (node:_http_server:956:12)
+    at HTTPParser.parserOnHeadersComplete (node:_http_common:128:17) {
+  code: undefined
+}
+MoneroError: Wallet does not exist at path: C:/Apache24/htdocs/getpaidcrypto.online/api/w/1692439288519
+    at Function.openWallet (C:\Apache24\htdocs\getpaidcrypto.online\api\node_modules\@rino-wallet\monero-javascript\src\main\js\wallet\MoneroWalletFull.js:130:59)
+    at Object.module.exports.openWalletFull (C:\Apache24\htdocs\getpaidcrypto.online\api\node_modules\@rino-wallet\monero-javascript\index.js:257:85)
+    at C:\Apache24\htdocs\getpaidcrypto.online\api\verifytransaction.js:22:41
+    at Server.<anonymous> (C:\Apache24\htdocs\getpaidcrypto.online\api\verifytransaction.js:62:3)
+    at Server.emit (node:events:527:28)
+    at parserOnIncoming (node:_http_server:956:12)
+    at HTTPParser.parserOnHeadersComplete (node:_http_common:128:17) {
+  code: undefined
+}
+MoneroError: Wallet does not exist at path: C:/Apache24/htdocs/getpaidcrypto.online/api/w/1692439288519
+    at Function.openWallet (C:\Apache24\htdocs\getpaidcrypto.online\api\node_modules\@rino-wallet\monero-javascript\src\main\js\wallet\MoneroWalletFull.js:130:59)
+    at Object.module.exports.openWalletFull (C:\Apache24\htdocs\getpaidcrypto.online\api\node_modules\@rino-wallet\monero-javascript\index.js:257:85)
+    at C:\Apache24\htdocs\getpaidcrypto.online\api\verifytransaction.js:22:41
+    at Server.<anonymous> (C:\Apache24\htdocs\getpaidcrypto.online\api\verifytransaction.js:62:3)
+    at Server.emit (node:events:527:28)
+    at parserOnIncoming (node:_http_server:956:12)
+    at HTTPParser.parserOnHeadersComplete (node:_http_common:128:17) {
+  code: undefined
+}
+MoneroError: Wallet does not exist at path: C:/Apache24/htdocs/getpaidcrypto.online/api/w/1692439288519
+    at Function.openWallet (C:\Apache24\htdocs\getpaidcrypto.online\api\node_modules\@rino-wallet\monero-javascript\src\main\js\wallet\MoneroWalletFull.js:130:59)
+    at Object.module.exports.openWalletFull (C:\Apache24\htdocs\getpaidcrypto.online\api\node_modules\@rino-wallet\monero-javascript\index.js:257:85)
+    at C:\Apache24\htdocs\getpaidcrypto.online\api\verifytransaction.js:22:41
+    at Server.<anonymous> (C:\Apache24\htdocs\getpaidcrypto.online\api\verifytransaction.js:62:3)
+    at Server.emit (node:events:527:28)
+    at parserOnIncoming (node:_http_server:956:12)
+    at HTTPParser.parserOnHeadersComplete (node:_http_common:128:17) {
+  code: undefined
+}
