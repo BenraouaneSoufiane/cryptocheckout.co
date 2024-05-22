@@ -166,6 +166,109 @@ if($_GET['session']){
     die();
 }
 
+if(isset($_GET['presta'])){
+    $as = substr(md5(strval(round(microtime(true) * 1000))."ssecret"), 0, -26);
+        include "txtdb.php";
+        $db = new TxtDb();
+        $pin = generate_pin();
+
+        $db->insert('merchants', ['pk' => $privatekey, 'address' => $address, 'as' => $as, 'notif' => $output['email'], 'pin' => $pin, 'stamp' => round(microtime(true) * 1000),'plan' => $plan,'tc' => 0,'confirmed' => false]);
+        $obj = array();
+        $obj['email'] = $output['email'];
+        $pass = substr(strval(round(microtime(true) * 1000)), -6);
+        $obj['confirmation'] = $pass;
+        if (!empty($output['email'])) {
+            if (filter_var($output['email'], FILTER_VALIDATE_EMAIL)) {
+                $r = sendmail($output['email'], 'Confirmation', 'Hello, somebody were register at cryptocheckout.co by this address, if you who did, folllow this link to confirm it: <a href="https://cryptocheckout.co/confirm.php?as='.$as.'" target="_blank" >https://cryptocheckout.co/confirm.php?as='.$as.'</a>');
+                if ($r === 'Message has been sent') {
+                    header('Content-type: application/json');
+
+                    $r = array('mnemonic' => array('alltypes' => hex2bin($privatekey['alltypes']), 'xmr' => $xmrmnemonic), 'address' => $address, 'as' => $as, 'pin' => $pin);
+
+                    echo json_encode($r);
+                    if($output['plan'] !== 'paid') {
+                        $_SESSION['did'] = true;
+                        $_SESSION['phrase'] = 'none';
+                        $_SESSION['inline'] = 'none';
+                    }
+
+                    die();
+                } else {
+                    header('Content-type: application/json');
+                    echo json_encode(array('result' => false, 'msg' => 'Invalid email'));
+                    die();
+                }
+            }
+        } else {
+            $r = array('mnemonic' => array('alltypes' => hex2bin($privatekey['alltypes']), 'xmr' => $xmrmnemonic), 'address' => $address, 'as' => $as, 'pin' => $pin);
+            header('Content-type: application/json');
+            echo json_encode($r);
+            if($output['plan'] !== 'paid') {
+                $_SESSION['did'] = true;
+                $_SESSION['phrase'] = 'none';
+                $_SESSION['inline'] = 'none';
+            }
+            die();
+        }
+}
+
+if(isset($_GET['woo'])){
+    $r = file_get_contents('http://api.cryptocheckout.co:8080/?type=tw&password='.$output['password']);
+            $r = json_decode($r, true);
+            $address = $r['address'];
+            $privatekey['alltypes'] = $r['pk'];
+            //include 'phpqrcode/qrlib.php';
+            //QRcode::png($r0, 'btc/'.$r['btc'].'.png', QR_ECLEVEL_L, 4);
+
+            /*$r = file_get_contents('http://api.cryptocheckout.co/?type=xmr');
+            $address['xmr'] = json_decode($r, true)['address'];
+            $privatekey['xmr'] = json_decode($r, true)['privatekey'];
+            $xmrmnemonic = json_decode($r, true)['mnemonic'];*/
+            $as = substr(md5(strval(round(microtime(true) * 1000))."ssecret"), 0, -26);
+        include "txtdb.php";
+        $db = new TxtDb();
+        $pin = generate_pin();
+
+        $db->insert('merchants', ['pk' => $privatekey, 'address' => $address, 'as' => $as, 'notif' => $output['email'], 'pin' => $pin, 'stamp' => round(microtime(true) * 1000),'plan' => $plan,'tc' => 0,'confirmed' => false]);
+        $obj = array();
+        $obj['email'] = $output['email'];
+        $pass = substr(strval(round(microtime(true) * 1000)), -6);
+        $obj['confirmation'] = $pass;
+        if (!empty($output['email'])) {
+            if (filter_var($output['email'], FILTER_VALIDATE_EMAIL)) {
+                $r = sendmail($output['email'], 'Confirmation', 'Hello, somebody were register at cryptocheckout.co by this address, if you who did, folllow this link to confirm it: <a href="https://cryptocheckout.co/confirm.php?as='.$as.'" target="_blank" >https://cryptocheckout.co/confirm.php?as='.$as.'</a>');
+                if ($r === 'Message has been sent') {
+                    header('Content-type: application/json');
+
+                    $r = array('mnemonic' => array('alltypes' => hex2bin($privatekey['alltypes']), 'xmr' => $xmrmnemonic), 'address' => $address, 'as' => $as, 'pin' => $pin);
+
+                    echo json_encode($r);
+                    if($output['plan'] !== 'paid') {
+                        $_SESSION['did'] = true;
+                        $_SESSION['phrase'] = 'none';
+                        $_SESSION['inline'] = 'none';
+                    }
+
+                    die();
+                } else {
+                    header('Content-type: application/json');
+                    echo json_encode(array('result' => false, 'msg' => 'Invalid email'));
+                    die();
+                }
+            }
+        } else {
+            $r = array('mnemonic' => array('alltypes' => hex2bin($privatekey['alltypes']), 'xmr' => $xmrmnemonic), 'address' => $address, 'as' => $as, 'pin' => $pin);
+            header('Content-type: application/json');
+            echo json_encode($r);
+            if($output['plan'] !== 'paid') {
+                $_SESSION['did'] = true;
+                $_SESSION['phrase'] = 'none';
+                $_SESSION['inline'] = 'none';
+            }
+            die();
+        }
+}
+
 if (isset($_GET['test'])) {
 
 

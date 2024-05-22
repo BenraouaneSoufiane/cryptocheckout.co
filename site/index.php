@@ -27,11 +27,11 @@ if (isset($_GET['download'])) {
     $cfile = fopen('dcounter.json', 'w');
     fwrite($cfile, intval($i)+1);
     fclose($cfile);
-    header('Location: https://downloads.wordpress.org/plugin/crypto-checkout-for-woocommerce.1.1.0.zip');
+    header('Location: https://downloads.wordpress.org/plugin/crypto-checkout-for-woocommerce.1.2.2.zip');
 }
 
 
-if (isset($_GET['id']) && strpos($_SERVER['REQUEST_URI'], 'crypto.js') !== false) {
+if (isset($_GET['id']) && (strpos($_SERVER['REQUEST_URI'], 'crypto.js') !== false || isset($_GET['id']) && strpos($_SERVER['REQUEST_URI'], 'crypto-presta.js') !== false )) {
 
     if (isset($_GET['lang'])) {
         if ($_GET['lang'] == 'ar') {
@@ -135,7 +135,13 @@ if (isset($_GET['id']) && strpos($_SERVER['REQUEST_URI'], 'crypto.js') !== false
     $db = new TxtDb();
     $as = $db->select('merchants', array('as' => $_GET['id']));
     $address = json_encode($as[array_keys($as)[0]]['address']);
-    $sf .= ', address='.$address.' , amount=[] ,type="",as="'.$_GET['id'].'", hash="" ,'.$curr.';'.file_get_contents('222crude_gopay1.min.js');
+    if(isset($_GET['id']) && strpos($_SERVER['REQUEST_URI'], 'crypto-presta.js') !== false){
+        $sf .= ', address='.$address.' , amount=[] ,type="",as="'.$_GET['id'].'", hash="" ,'.$curr.';'.file_get_contents('crypto-presta.min.js');
+
+    }else{
+        $sf .= ', address='.$address.' , amount=[] ,type="",as="'.$_GET['id'].'", hash="" ,'.$curr.';'.file_get_contents('222crude_gopay1.min.js');
+
+    }
     //header('Content-Description: File Transfer');
     //header('Content-Disposition: attachment; filename=gopay.js');
     //header('Expires: 0');
