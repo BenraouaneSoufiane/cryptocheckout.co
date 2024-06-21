@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../stylesheet.css">
 
     <script type="text/javascript" src="/jquery.min.js"></script>
-     <title>CryptoCheckout | Our Security Standards</title>
+     <title>CryptoCheckout | Coming next</title>
 </head>
 <body style="background-color:white;font-family: Arial;" >
 <header>
@@ -63,7 +63,7 @@
             </header>
     <div id="greeting" style="position: relative;width: 55%;margin-right:auto;margin-left:auto;margin-top:80px">
         <h1 id="mainheading" style="text-align: center">Coming Next</h1>
-        <p style="text-align: center;font-size: 18px;line-height: 1.5;">We're working to add other crypto currencies: dash, litecoin, digibyte, uniswap, 1inche, bnb..... , adding reactjs, next.js & nest.js support, making this tool available on e-commerce platforms/providers like woocommerce, shopify, magento, whm, wix, webflow, bigcommerce...., add live chat...</p><br/>     
+        <p style="text-align: center;font-size: 18px;line-height: 1.5;">We're working to enable users to pay with one click (setup transaction automatically) with trustwallet/metamask web extension/apps, enabling crypto platform users to pay, moving the USDT to zero-fee network, add other crypto currencies: dash, litecoin, digibyte, uniswap, 1inche, bnb..... , adding reactjs, next.js & nest.js support (npm package), Go lang & python packages, making this tool available on e-commerce platforms/providers like woocommerce, shopify, magento, whm, wix, webflow, bigcommerce...., add live chat...</p><br/>     
          
         
     </div>

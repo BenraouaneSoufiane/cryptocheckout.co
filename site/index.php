@@ -135,9 +135,13 @@ if (isset($_GET['id']) && (strpos($_SERVER['REQUEST_URI'], 'crypto.js') !== fals
     $db = new TxtDb();
     $as = $db->select('merchants', array('as' => $_GET['id']));
     $address = json_encode($as[array_keys($as)[0]]['address']);
-    if(isset($_GET['id']) && strpos($_SERVER['REQUEST_URI'], 'crypto-presta.js') !== false){
-        $sf .= ', address='.$address.' , amount=[] ,type="",as="'.$_GET['id'].'", hash="" ,'.$curr.';'.file_get_contents('crypto-presta.min.js');
-
+    if(isset($_GET['id']) && strpos($_SERVER['REQUEST_URI'], 'crypto-presta.js') !== false){        
+        $current_time_seconds = time();
+        if($as[array_keys($as)[0]]['end']>$current_time_seconds){
+            $sf .= ', amount=[] ,type="",as="'.$_GET['id'].'", hash="" ,'.$curr.';'.file_get_contents('crypto-presta.min.js');
+        }else{
+            $sf .= ', amount=[] ,type="",as="'.$_GET['id'].'", hash="" ,'.$curr.'; function showbtn(a,b,c,d){(function($){$("#"+a).append("<p>Subscription expired, please renew it to continue</p>")})(jQuery)}';
+        }
     }else{
         $sf .= ', address='.$address.' , amount=[] ,type="",as="'.$_GET['id'].'", hash="" ,'.$curr.';'.file_get_contents('222crude_gopay1.min.js');
 
@@ -920,7 +924,7 @@ var hidden = true;
                     }
 
 
-                    #pp {
+                    #pap {
                         display: block;
                         content: '';
                         width: 50px;
@@ -992,7 +996,7 @@ var hidden = true;
                 </style>
                 <table id="table">
                     <tr>
-                        <th id="ppth"><span id="pp"></span><a style="position: relative;top: 15px;">Paypal</a></th>
+                        <th id="ppth"><span id="pap"></span><a style="position: relative;top: 15px;">Paypal</a></th>
                         <td id="pptd">You'll get 2823$, Paypal takes 177$ 
                         </td>
                     </tr>
@@ -1179,11 +1183,11 @@ var hidden = true;
                     $('#woo,#shopify,#prestashop,#opencart').css({
                         'display': 'block', 'margin-right': 'auto', 'margin-left': 'auto', 'float': 'none', 'width': '200px', 'height': '200px'
                     });
-                       $('#pp,#stripe,#square,#cryptocheckout,#binance,#coinbase').css({
+                       $('#pap,#stripe,#square,#cryptocheckout,#binance,#coinbase').css({
                         'display': 'block', 'margin-right': 'auto', 'margin-left': 'auto', 'float': 'none', 'width': '200px', 'height': '200px'
                     });
                     $('#woo').css('background-image', 'url("https://cryptocheckout.co/woo-m.png")');
-                                        $('#pp').css('background-image', 'url("https://cryptocheckout.co/paypal-m.png")');
+                                        $('#pap').css('background-image', 'url("https://cryptocheckout.co/paypal-m.png")');
                                                             $('#stripe').css('background-image', 'url("https://cryptocheckout.co/stripe-m.png")');
                                                                                 $('#square').css('background-image', 'url("https://cryptocheckout.co/square-m.png")');
                                                                                                     $('#cryptocheckout').css('background-image', 'url("https://cryptocheckout.co/cryptocheckout-m.png")');
@@ -1346,7 +1350,7 @@ var hidden = true;
                             'font-size': '28px'
                         });
                         $('#woo').css('top', '50px')
-                        $('#pp').css('top', '50px')
+                        $('#pap').css('top', '50px')
                     $('#greeting label,#greeting p,#greeting li').css('font-size', '58px');
                     $('#test2 input').css({'height':'150px'});
                     $('#greeting ul').css({'display': 'block','left':'unset'});
@@ -1358,6 +1362,7 @@ var hidden = true;
                     }else{
                         $('#test7 h4,#test5 h4,#test6 h4,#api h2').css({'font-size':'48px'});
                         $('#api code').css('font-size','18px');
+                        $('#test5').css('width', '51%');
                     }
                     $('html,body').css('overflow-x', 'hidden');
                     $('#api').css('width', '95%');
@@ -1368,7 +1373,7 @@ var hidden = true;
                         //$('#uploader').css('margin-top','-50px');
                         //$('#clicktoupload').css('top','200px');
                     }
-
+                   $('#test7').hide();
                 })(jQuery);
             </script>
 

@@ -167,13 +167,24 @@ if($_GET['session']){
 }
 
 if(isset($_GET['presta'])){
+    require_once('svix-webhooks/php/init.php');    
+    $json = file_get_contents('php://input');
+    $wh = new \Svix\Webhook('whsec_GDVsmNBfKzV9rnTglPyrY8VFuJY0uE3S');
+    $header = array(
+        'svix-id'  => getallheaders()['Svix-Id'],
+        'svix-timestamp' => getallheaders()['Svix-Timestamp'],
+        'svix-signature' => getallheaders()['Svix-Signature'],
+    );
+    $json = $wh->verify($json, $header);
     $as = substr(md5(strval(round(microtime(true) * 1000))."ssecret"), 0, -26);
         include "txtdb.php";
         $db = new TxtDb();
-        $pin = generate_pin();
-
-        $db->insert('merchants', ['pk' => $privatekey, 'address' => $address, 'as' => $as, 'notif' => $output['email'], 'pin' => $pin, 'stamp' => round(microtime(true) * 1000),'plan' => $plan,'tc' => 0,'confirmed' => false]);
-        $obj = array();
+        $dbr = $db->select('merchants',array('as'=>$json['data']['subscription']['id']));
+        if($dbr){            
+            $db->update('merchants',['as'=>$json['data']['subscription']['id'],'data'=>json_decode($json),'address'=>array(),'notif'=>$json['data']['customer']['email'],'pk'=>array(),'end'=>$json['data']['subscription']['next_billing_at']],array_keys($dbr)[0]);               
+        }else{
+            $db->insert('merchants',['as'=>$json['data']['subscription']['id'],'data'=>json_decode($json),'address'=>array(),'notif'=>$json['data']['customer']['email'],'pk'=>array(),'end'=>$json['data']['subscription']['next_billing_at']]);
+            /*$obj = array();
         $obj['email'] = $output['email'];
         $pass = substr(strval(round(microtime(true) * 1000)), -6);
         $obj['confirmation'] = $pass;
@@ -209,9 +220,38 @@ if(isset($_GET['presta'])){
                 $_SESSION['inline'] = 'none';
             }
             die();
+        }*/
         }
+        
 }
+if(isset($_GET['as']) && $_GET['type']=='presta'){
+    include "txtdb.php";
+        $db = new TxtDb();
+        $dbr = $db->select('merchants',array('as'=>$_GET['as']));
+        $shop_url = $dbr[array_keys($dbr)[0]]['data']['data']['customer']['meta_data']['shop_url'];
+        $ns_record = dns_get_record(str_replace('https://','',str_replace('http://','',$shop_url)),DNS_NS) ? dns_get_record(str_replace('https://','',str_replace('http://','',$shop_url)),DNS_NS)[0]['target']:'404';
+        if($ns_record!=='404'){
+            $shop_ip = dns_get_record($ns_record,DNS_A)[0]['ip'];
+        }else{
+            $shop_ip = dns_get_record(str_replace('https://','',str_replace('http://','',$shop_url)),DNS_A)[0]['ip'];
+        }
 
+        if( $dbr && $_SERVER['REMOTE_ADDR']==$shop_ip){
+            $data = file_get_contents('php://input');
+            $db->update('merchants',['as'=>$_GET['as'],'data'=>$dbr[array_keys($dbr)[0]]['data'],'address'=>json_decode($data),'notif'=>$dbr[array_keys($dbr)[0]]['notif'],'pk'=>array(),'end'=>$dbr[array_keys($dbr)[0]]['end']],array_keys($dbr)[0]);               
+        }
+
+
+}
+function get_domain($url)
+{
+  $pieces = parse_url($url);
+  $domain = isset($pieces['host']) ? $pieces['host'] : '';
+  if (preg_match('/(?P<domain>[a-z0-9][a-z0-9\-]{1,63}\.[a-z\.]{2,6})$/i', $domain, $regs)) {
+    return $regs['domain'];
+  }
+  return false;
+}
 if(isset($_GET['woo'])){
     $r = file_get_contents('http://api.cryptocheckout.co:8080/?type=tw&password='.$output['password']);
             $r = json_decode($r, true);
@@ -608,7 +648,7 @@ if (isset($_GET['hash']) && isset($_GET['as']) && isset($_GET['type'])) {
                 break;
             case 'usdt':
                 $r = file_get_contents('https://api.bscscan.com/api?module=account&action=tokentx&address='.$m['address'][$_GET['type']].'&apikey=3B5GBAD8ER2W18BQ1I9JGR274BJG3FVTEB');
-
+                
                 if ($r == '' || $r == null) {
                     header('Content-type: application/json');
                     echo json_encode(array('result' => 'failure', 'message' => $r));
@@ -1060,14 +1100,14 @@ if (isset($_GET['submit']) && strlen($_GET['submit']) == 6 && isset($_GET['amoun
         $decimal = 1000000;
     }
     if ($_GET['curr'] == 'xmr') {
-        $db->insert('pre-transactions', array('hash' => $hash, 'address' => $_GET['submit'], 'mcamount' => floatval($_GET['amount']) * $decimal, 'amount' => $_GET['amount'], 'from' => '', 'to' => '', 'completed' => '', 'issued' => round(microtime(true) * 1000), 'curr' => $_GET['curr'], 'ip' => $_SERVER['REMOTE_ADDR'], 'cookie' => json_encode($_COOKIE)));
+        $db->insert('pre-transactions', array('hash' => $hash, 'address' => $_GET['submit'], 'mcamount' => floatval($_GET['amount']) * $decimal, 'amount' => $_GET['amount'], 'from' => '', 'to' => '', 'completed' => '', 'issued' => round(microtime(true) * 1000), 'curr' => $_GET['curr'],'rate'=>$_GET['rate'], 'ip' => $_SERVER['REMOTE_ADDR'], 'cookie' => json_encode($_COOKIE)));
         header('Content-type: application/json');
         echo json_encode(array('result' => $hash));
         die();
     } else {
         $t = $db->select('pre-transactions', array('address' => $_GET['submit'], 'amount' => $_GET['amount'] * $decimal));
         if (empty($t)) {
-            $db->insert('pre-transactions', array('hash' => $hash, 'address' => $_GET['submit'], 'mcamount' => floatval($_GET['amount']) * $decimal, 'amount' => $_GET['amount'], 'from' => '', 'to' => '', 'completed' => '', 'issued' => round(microtime(true) * 1000), 'curr' => $_GET['curr'], 'ip' => $_SERVER['REMOTE_ADDR'], 'cookie' => json_encode($_COOKIE)));
+            $db->insert('pre-transactions', array('hash' => $hash, 'address' => $_GET['submit'], 'mcamount' => floatval($_GET['amount']) * $decimal, 'amount' => $_GET['amount'], 'from' => '', 'to' => '', 'completed' => '', 'issued' => round(microtime(true) * 1000), 'curr' => $_GET['curr'],'rate'=>$_GET['rate'], 'ip' => $_SERVER['REMOTE_ADDR'], 'cookie' => json_encode($_COOKIE)));
             header('Content-type: application/json');
             echo json_encode(array('result' => $hash));
             die();

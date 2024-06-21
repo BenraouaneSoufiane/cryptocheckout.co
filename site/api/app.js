@@ -55,8 +55,8 @@ var server = http.createServer(function (req, res) {
     fs.copyFile(
       "C:/Apache24/htdocs/cryptocheckout.co/api/w/" + queryObject.wallet,
       "C:/Apache24/htdocs/cryptocheckout.co/api/w/" +
-        queryObject.wallet +
-        ".bk",
+      queryObject.wallet +
+      ".bk",
       (err) => {
         if (err) {
           console.log(err);
@@ -66,11 +66,11 @@ var server = http.createServer(function (req, res) {
     );
     fs.copyFile(
       "C:/Apache24/htdocs/cryptocheckout.co/api/w/" +
-        queryObject.wallet +
-        ".keys",
+      queryObject.wallet +
+      ".keys",
       "C:/Apache24/htdocs/cryptocheckout.co/api/w/" +
-        queryObject.wallet +
-        ".keys.bk",
+      queryObject.wallet +
+      ".keys.bk",
       (err) => {
         if (err) {
           console.log(err);
@@ -80,11 +80,11 @@ var server = http.createServer(function (req, res) {
     );
     fs.copyFile(
       "C:/Apache24/htdocs/cryptocheckout.co/api/w/" +
-        queryObject.wallet +
-        ".address.txt",
+      queryObject.wallet +
+      ".address.txt",
       "C:/Apache24/htdocs/cryptocheckout.co/api/w/" +
-        queryObject.wallet +
-        ".address.txt.bk",
+      queryObject.wallet +
+      ".address.txt.bk",
       (err) => {
         if (err) {
           console.log(err);
@@ -149,7 +149,7 @@ var server = http.createServer(function (req, res) {
           try {
             fs.unlink(
               "C:/Apache24/htdocs/cryptocheckout.co/api/w/" +
-                queryObject.wallet,
+              queryObject.wallet,
               (err) => {
                 if (err) {
                   console.log(err);
@@ -159,8 +159,8 @@ var server = http.createServer(function (req, res) {
             );
             fs.unlink(
               "C:/Apache24/htdocs/cryptocheckout.co/api/w/" +
-                queryObject.wallet +
-                ".address.txt",
+              queryObject.wallet +
+              ".address.txt",
               (err) => {
                 if (err) {
                   console.log(err);
@@ -170,10 +170,10 @@ var server = http.createServer(function (req, res) {
             );
             fs.copyFile(
               "C:/Apache24/htdocs/cryptocheckout.co/api/w/" +
-                queryObject.wallet +
-                ".bk",
+              queryObject.wallet +
+              ".bk",
               "C:/Apache24/htdocs/cryptocheckout.co/api/w/" +
-                queryObject.wallet,
+              queryObject.wallet,
               (err) => {
                 if (err) {
                   console.log(err);
@@ -183,11 +183,11 @@ var server = http.createServer(function (req, res) {
             );
             fs.copyFile(
               "C:/Apache24/htdocs/cryptocheckout.co/api/w/" +
-                queryObject.wallet +
-                ".address.txt.bk",
+              queryObject.wallet +
+              ".address.txt.bk",
               "C:/Apache24/htdocs/cryptocheckout.co/api/w/" +
-                queryObject.wallet +
-                ".address.txt",
+              queryObject.wallet +
+              ".address.txt",
               (err) => {
                 if (err) {
                   console.log(err);
@@ -250,12 +250,12 @@ var server = http.createServer(function (req, res) {
               );
               res.end(
                 '{"address":"' +
-                  address +
-                  '","privatekey":"' +
-                  secret +
-                  '","mnemonic":"' +
-                  mn +
-                  '"}'
+                address +
+                '","privatekey":"' +
+                secret +
+                '","mnemonic":"' +
+                mn +
+                '"}'
               );
             } catch (e2) {
               res.end(JSON.stringify(util.inspect(e2)));
@@ -289,20 +289,20 @@ var server = http.createServer(function (req, res) {
       }
       console.log(
         '{"address":' +
-          JSON.stringify(result) +
-          ',"pk":"' +
-          wallet.mnemonic() +
-          '"}'
+        JSON.stringify(result) +
+        ',"pk":"' +
+        wallet.mnemonic() +
+        '"}'
       );
 
       res.end(
         '{"address":' +
-          JSON.stringify(result) +
-          ',"pk":"' +
-          Buffer.from(wallet.mnemonic(), "utf8").toString("hex") +
-          '" ,"mnemonic":"' +
-          wallet.mnemonic() +
-          '"}'
+        JSON.stringify(result) +
+        ',"pk":"' +
+        Buffer.from(wallet.mnemonic(), "utf8").toString("hex") +
+        '" ,"mnemonic":"' +
+        wallet.mnemonic() +
+        '"}'
       );
     })();
   }
@@ -450,8 +450,8 @@ const bs58 = require('bs58');
     var strr = "";
     https.get(
       "https://api.blockcypher.com/v1/btc/main/addrs/" +
-        queryObject.src +
-        "/full?token=0c90af3735a0454b97d1353fe7dec4f2&unspentOnly=true",
+      queryObject.src +
+      "/full?token=0c90af3735a0454b97d1353fe7dec4f2&unspentOnly=true",
       (r) => {
         r.on("data", (r1) => {
           strr += r1;
@@ -760,8 +760,8 @@ const bs58 = require('bs58');
         const r = await sendAvax(
           JSON.stringify(
             Number(queryObject.amount) / 1000000000000000000 -
-              obj.maxFeePerGas / 1000 +
-              0.024
+            obj.maxFeePerGas / 1000 +
+            0.024
           ),
           queryObject.dst,
           obj.maxFeePerGas,
@@ -844,7 +844,7 @@ const bs58 = require('bs58');
         .transfer(
           queryObject.dst,
           Number(queryObject.amount) -
-            (parseFloat(info.partialFee.toHuman()) + 1) / 1000
+          (parseFloat(info.partialFee.toHuman()) + 1) / 1000
         )
         .signAndSend(keypair);
       res.end('{"result":"success","tx":' + txHash + "}");
@@ -1100,10 +1100,10 @@ const bs58 = require('bs58');
           });
           res.end(
             '{"result":"success","tx":"' +
-              txHash.state.hash +
-              "-" +
-              txHash.state.key +
-              '"}'
+            txHash.state.hash +
+            "-" +
+            txHash.state.key +
+            '"}'
           );
         } catch (e) {
           console.log(e);
@@ -1114,7 +1114,7 @@ const bs58 = require('bs58');
           try {
             fs.unlink(
               "C:/Apache24/htdocs/cryptocheckout.co/api/w/" +
-                queryObject.wallet,
+              queryObject.wallet,
               (err) => {
                 if (err) {
                   console.log(err);
@@ -1124,8 +1124,8 @@ const bs58 = require('bs58');
             );
             fs.unlink(
               "C:/Apache24/htdocs/cryptocheckout.co/api/w/" +
-                queryObject.wallet +
-                ".address.txt",
+              queryObject.wallet +
+              ".address.txt",
               (err) => {
                 if (err) {
                   console.log(err);
@@ -1135,10 +1135,10 @@ const bs58 = require('bs58');
             );
             fs.copyFile(
               "C:/Apache24/htdocs/cryptocheckout.co/api/w/" +
-                queryObject.wallet +
-                ".bk",
+              queryObject.wallet +
+              ".bk",
               "C:/Apache24/htdocs/cryptocheckout.co/api/w/" +
-                queryObject.wallet,
+              queryObject.wallet,
               (err) => {
                 if (err) {
                   console.log(err);
@@ -1148,11 +1148,11 @@ const bs58 = require('bs58');
             );
             fs.copyFile(
               "C:/Apache24/htdocs/cryptocheckout.co/api/w/" +
-                queryObject.wallet +
-                ".address.txt.bk",
+              queryObject.wallet +
+              ".address.txt.bk",
               "C:/Apache24/htdocs/cryptocheckout.co/api/w/" +
-                queryObject.wallet +
-                ".address.txt",
+              queryObject.wallet +
+              ".address.txt",
               (err) => {
                 if (err) {
                   console.log(err);
@@ -1168,7 +1168,7 @@ const bs58 = require('bs58');
     })();
   }
 });
-server.listen(port);
+server.listen(port, hostname);
 
 function atoh(a) {
   var b = a

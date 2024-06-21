@@ -67,9 +67,9 @@
         <li style="text-align: center;font-size: 18px;line-height: 1.5;">CryptoCheckout button comes with onInit(e), onClick(e), onApprove(e) & onError(e) events which ease functionalities & customize styles</li>
         <li style="text-align: center;font-size: 18px;line-height: 1.5;">Unlike other operators, we use the USDT Binance Smart Chain (BEP20), lowest fee per transaction/withdrawal, only 0.3$, that's encourage clients to pay by crypto currencies (other networks charge the user 1$)</li>
         <li style="text-align: center;font-size: 18px;line-height: 1.5;">Quick start: no signup required, no ID verification required, almost 5 min to fully integrate our crypto payments button</li>
-        <li style="text-align: center;font-size: 18px;line-height: 1.5;">Sales notifications: includes amount currency & the address of the source of the transaction</li>
+        <li style="text-align: center;font-size: 18px;line-height: 1.5;">Sales notifications: includes the source address, the amount & the currency</li>
         <li style="text-align: center;font-size: 18px;line-height: 1.5;">Decentralized: no private keys/mnemonic phrases stored/shared with us</li>
-        <li style="text-align: center;font-size: 18px;line-height: 1.5;">Universal: target any client who has crypto wallet, not only clients on such crypto platform</li>
+        <li style="text-align: center;font-size: 18px;line-height: 1.5;">Universal: target any crypto client, not only clients on such crypto platform</li>
         <li style="text-align: center;font-size: 18px;line-height: 1.5;">Secure/Safe: we've DDos protection, we approve only transaction marked as success / exceed certain number of confirmations, we also block side/parallel trasactions comes from hackers that listen on the merchant address for incoming transaction</li>
         <li style="text-align: center;font-size: 18px;line-height: 1.5;">Multilingual: languages supported are: ar, bn, zh, cs, en, da, nl, fr, de, he, hi, id, it, ja, ko, pl, pt, ru, sv, es, tr, uk, vi</li>
         <li style="text-align: center;font-size: 18px;line-height: 1.5;">Responsive</li>
